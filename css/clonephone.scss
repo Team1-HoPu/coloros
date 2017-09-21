@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.clone_nav_container {
+  width: 100vw;
+  height: 6.6rem;
+  position: relative;
+  z-index: 9999;
+  background: #ffffff;
+  overflow: hidden;
+
+  .nav{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0px auto;
+    .clone_nav_container_logo{
+      float: left;
+      width: 12rem;
+      height: 3.4rem;
+     .clone_nav_container_logo a{
+       width: 12rem;
+       height: 2.1rem;
+
+     }
+        img{
+          width: 12rem;
+          height: 3rem;
+          position: relative;
+          top: 17px;
+        }
+
+    }
+  }
+
+}
+
