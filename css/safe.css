@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+.safe-pc-header {
+  width: 120rem;
+  margin: 0 auto;
+  overflow: hidden; }
+  .safe-pc-header .safe-pc-logo {
+    margin-top: 1.7rem;
+    height: 3rem;
+    width: 12rem;
+    float: left; }
+    .safe-pc-header .safe-pc-logo a {
+      background: transparent;
+      text-decoration: none; }
+      .safe-pc-header .safe-pc-logo a img {
+        width: 100%;
+        height: 100%; }
+  .safe-pc-header .safe-pc-nav {
+    height: 6.5rem;
+    line-height: 6.5rem;
+    float: right; }
+    .safe-pc-header .safe-pc-nav .safe-pc-list {
+      list-style: none; }
+      .safe-pc-header .safe-pc-nav .safe-pc-list li {
+        padding: 0 1.5rem;
+        float: left; }
+
+.safe-pc-fullpage {
+  font-weight: "xiaohei";
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #fff, #DFF7E2); }
+  .safe-pc-fullpage .safe-pc-fullpage-width {
+    width: 120rem;
+    position: relative;
+    min-height: 700px; }
+    .safe-pc-fullpage .safe-pc-fullpage-width img {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .safe-pc-fullpage .safe-pc-fullpage-width .safe-pc-fullpage-text {
+      font-size: 20px;
+      width: 480px;
+      color: #000000;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 250px; }
+      .safe-pc-fullpage .safe-pc-fullpage-width .safe-pc-fullpage-text b {
+        font-size: 35px; }
+      .safe-pc-fullpage .safe-pc-fullpage-width .safe-pc-fullpage-text p {
+        background: #ebf9e4; }
+
+.safe-pc-video {
+  font-weight: "xiaohei";
+  overflow: hidden;
+  width: 120rem;
+  margin: auto; }
+  .safe-pc-video .safe-pc-video-item {
+    display: inline-block;
+    width: 30rem;
+    height: 16.5rem;
+    margin: 40px 40px;
+    text-align: center; }
+    .safe-pc-video .safe-pc-video-item .safe-pc-video-item-text {
+      font-size: 16px;
+      margin: 37px auto 5px auto;
+      width: 6rem;
+      text-align: center; }
+    .safe-pc-video .safe-pc-video-item .safe-pc-video-item-one-text {
+      background: rgba(244, 233, 183, 0.4); }
+    .safe-pc-video .safe-pc-video-item .safe-pc-video-item-two-text {
+      background: rgba(196, 211, 233, 0.4); }
+    .safe-pc-video .safe-pc-video-item .safe-pc-video-item-tree-text {
+      background: rgba(226, 244, 183, 0.4); }
+  .safe-pc-video .safe-pc-video-item-one {
+    background: url("../img/safe_img/cleanvideo.jpg") no-repeat center center; }
+  .safe-pc-video .safe-pc-video-item-two {
+    background: url("../img/safe_img/safevideo.jpg") no-repeat center center; }
+  .safe-pc-video .safe-pc-video-item-tree {
+    background: url("../img/safe_img/payvideo.jpg") no-repeat center center; }
+
+/*# sourceMappingURL=safe.css.map */
