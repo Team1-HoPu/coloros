@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+}
 html{
   font-size: 10px;
 }
@@ -51,13 +54,19 @@ html{
   width: 100%;
   background: -webkit-linear-gradient(top,#fff,#DFF7E2);
   .safe-pc-fullpage-width{
+    margin: auto;
     width: 120rem;
     position: relative;
     min-height: 700px;
-    img{
+    .safe-pc-fullpage-img{
       position: absolute;
       bottom: 0;
       left: 0;
+      &:after{
+        display: table;
+        content: "";
+        clear: both;
+      }
     }
     .safe-pc-fullpage-text{
       font-size: 20px;
@@ -86,7 +95,7 @@ html{
     display: inline-block;
     width: 30rem;
     height: 16.5rem;
-    margin: 40px 40px;
+    margin: 50px 50px;
     text-align: center;
      .safe-pc-video-item-text{
        font-size: 16px;
@@ -113,4 +122,51 @@ html{
   .safe-pc-video-item-tree{
     background: url("../img/safe_img/payvideo.jpg") no-repeat center center;
   }
+}
+.safe-pc-property{
+  padding:200px 0 ;
+}
+.safe-pc-bg{
+  background-color: #fafafa;
+}
+ .safe-pc-center-text{
+   margin-top: 10rem;
+ }
+.safe-pc-center-always{
+  font-weight: "xiaohei";
+  .safe-pc-center-text-item{
+    display: inline-block;
+  }
+  .safe-pc-center-text-wire{
+    border: 2px solid #000000;
+    height: 25px;
+    display: inline-block;
+    margin:-1px 20px;
+
+  }
+  .safe-pc-center-text-list{
+    display: inline-block;
+  }
+}
+.safe-pc-center-one{
+  width: 850px;
+  .safe-pc-text-h{
+    font-size: 3.5rem;
+  }
+  .safe-pc-center-always{
+    .safe-pc-center-text-list{
+      text-align: center;
+      span{
+        font-size: 3rem;
+      }
+    }
+  }
+  .safe-pc-text-p{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+  }
+}
+.safe-pc-foot{
+
 }
