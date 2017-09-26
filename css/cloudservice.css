@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*
+* Project：   CloudService StyleSheet
+* Creator：   Jackzoom
+* CreatDate： 2017/09/21
+*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+a, h1 {
+  color: #D7DADD;
+  text-decoration: none; }
+  a:hover, h1:hover {
+    color: #FEFBFC;
+    text-decoration: none; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left; }
+
+html {
+  font-size: 12px; }
+
+body, html {
+  height: 100%; }
+
+body {
+  background: #137ac6;
+  width: 100%;
+  background-image: url("../img/cloudservice_img/cloud_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat,repeat-y; }
+
+#cloud_container {
+  position: relative;
+  height: auto;
+  min-height: 100%; }
+
+#cloud_form {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 350px;
+  height: 450px;
+  color: white; }
+  #cloud_form h2 {
+    text-align: center; }
+  #cloud_form p {
+    text-align: center; }
+  #cloud_form img {
+    width: 210px;
+    height: 160px;
+    margin-left: 60px; }
+  #cloud_form .cloud_form_group input {
+    width: 320px;
+    height: 50px;
+    color: white;
+    font-size: 1.5rem;
+    border: 0.5px solid rgba(253, 255, 255, 0.87);
+    border-radius: 40px;
+    background: #4090cc;
+    text-indent: 1.5rem;
+    margin: 10px 0;
+    padding: 5px;
+    opacity: .75; }
+  #cloud_form .cloud_form_group input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 1.2rem; }
+  #cloud_form .cloud_form_group input:focus {
+    opacity: 1; }
+  #cloud_form .cloud_form_group .cloud_captchaInput {
+    width: 200px;
+    float: left; }
+  #cloud_form .cloud_form_group .cloud_cap_img {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    text-align: right;
+    margin: 10px 0 10px 20px;
+    cursor: pointer;
+    border-radius: 4px; }
+  #cloud_form .cloud_form_group .cloud_login {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #A0C8E5;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    left: 70px;
+    text-align: center;
+    line-height: 50px; }
+
+#cloud_footer {
+  position: absolute;
+  bottom: 10px; }
+  #cloud_footer ul {
+    clear: both;
+    display: table;
+    margin: auto; }
+    #cloud_footer ul li {
+      border-right: 1px solid #D7DADD;
+      height: 1.1rem;
+      line-height: 1.1rem;
+      margin: 0 .4rem;
+      padding-right: .8rem; }
+      #cloud_footer ul li a {
+        font-size: 1.1rem; }
+    #cloud_footer ul li:last-child {
+      border-right: 0; }
+  #cloud_footer ul:first-child {
+    margin-bottom: 15px; }
+
+@media screen and (max-width: 340px) {
+  #cloud_form {
+    width: 250px;
+    margin-left: -15px; }
+
+  #cloud_form p, h2 {
+    margin-left: 30px;
+    width: 250px; }
+
+  #cloud_form img {
+    width: 180px;
+    margin-left: 70px; }
+
+  .cloud_form_group {
+    width: 250px; }
+
+  #cloud_form .cloud_form_group input .cloud_form_group input {
+    width: auto; }
+
+  #cloud_footer {
+    margin-bottom: -120px;
+    width: 300px; }
+
+  #cloud_form .cloud_form_group .cloud_cap_img {
+    top: -70px;
+    left: 190px; }
+
+  #cloud_footer ul:last-child {
+    display: none; } }
+@media screen and (min-width: 341px) and (max-width: 738px) {
+  #cloud_footer .cloud_footer_links {
+    display: none; } }
+@media screen and (max-height: 570px) {
+  #cloud_footer {
+    margin-bottom: -50px; } }
+
+/*# sourceMappingURL=cloudservice.css.map */
