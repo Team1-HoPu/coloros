@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#safety_section14{
+  height: 1000px;
+  background:url("../img/coloros3_1_img/s6_bg.jpg-170912.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  h3{
+    padding: 100px 0 50px 0;
+    font-size: 50px;
+  }
+  p{
+    margin: auto;
+    width: 1200px;
+  }
+  .section14_img{
+    width: 1200px;
+    height:574px;
+    background: url("../img/coloros3_1_img/s6_1.png-170912.png") no-repeat center;
+    margin: 70px auto;
+
+    position: relative;
+    .icon{
+      width: 62px;
+      height: 68px;
+      position: absolute;
+      animation: fadeInDown 2s infinite;
+      animation-iteration-count: 5;
+      background: url("../img/coloros3_1_img/s6_2.png-170912.png");
+    }
+    .icon-1{
+      left: 270px;
+      top: 180px;
+    }
+    .icon-2{
+      left: 570px;
+      top: 120px;
+    }
+    .icon-3{
+      left: 890px;
+      top: 270px;
+    }
+    .icon-4{
+      left: 990px;
+      top:410px;
+    }
+  }
+}
+
+
+
+
+
+.section{
+   text-align: center;
+ }
+#safety_section15{
+  height: 670px;
+  h3{
+    font-size: 34px;
+    padding:100px 0 30px 0;
+    animation: text_animate .7s forwards ease-in-out;
+    animation-delay: .5s;
+  }
+  p{
+    animation: text_animate .7s forwards ease-in-out;
+    animation-delay: .5s;
+  }
+  img{
+    margin-top: 70px;
+
+  }
+  ul{
+    margin:50px auto;
+    width: 957px;
+    .networking{
+      margin-left: 8px;
+    }
+    .open{
+      margin-left: 76px;
+    }
+    .landing{
+      margin-left:72px ;
+    }
+    .pay{
+      margin-left: 74px;
+    }
+    li{
+      box-sizing: border-box;
+      list-style: none;
+      float: left;
+      width: 180px;
+      height: 103px;
+      text-align: left;
+     font-size: 20px;
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+  }
+
+}
+#safety_section16{
+  background: #F8F8F8;
+  height: 800px;
+  box-sizing: border-box;
+
+  @extend #safety_section15;
+
+}
+@keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,80px,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@keyframes camera{
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

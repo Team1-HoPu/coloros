@@ -8,7 +8,7 @@ body {
 .nav_container {
   position: relative;
   z-index: 999999;
-  background: #fff;
+  background: #ffffff;
   height: 65px;
   overflow: hidden;
   border-bottom: 1px solid #999; }
@@ -38,6 +38,8 @@ body {
       display: block;
       padding: 0 4px;
       color: #333; }
+      .nav_list li a:hover {
+        color: #01ba95; }
       .nav_list li a .inner {
         padding: 0 15px;
         height: 65px;
@@ -45,7 +47,7 @@ body {
         display: block; }
 
 .rom_page_wrapper {
-  height: 1319px; }
+  height: 1200px; }
 
 .wrapper {
   width: 1200px;
@@ -56,30 +58,78 @@ body {
   margin: 110px auto 60px auto; }
 
 .down_container {
+  text-align: center;
   margin: auto;
-  width: 1200px; }
+  width: 1210px;
+  height: 1200px; }
   .down_container .download_box {
     height: 500px;
     width: 392px;
     margin: 0 8px 8px 0;
     background: #ffffff;
     float: left;
-    border: 1px solid #d8d8d8;
-    border-radius: 5px; }
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #d8d8d8; }
+    .down_container .download_box h3 {
+      margin-top: 35px;
+      font-size: 24px; }
     .down_container .download_box p {
-      width: 200px;
-      font-size: 15px;
+      width: 152px;
+      font-size: 13px;
       height: auto;
       margin: auto;
       text-align: left; }
     .down_container .download_box .phone {
       margin-top: 55px; }
+  .down_container .img {
+    margin-top: 40px;
+    width: 174px;
+    height: 174px; }
+  .down_container .jqbox {
+    height: 392px;
+    position: relative; }
+    .down_container .jqbox:hover .qrcode-box {
+      display: block; }
+    .down_container .jqbox img {
+      margin-top: 55px; }
+    .down_container .jqbox .download_txt {
+      width: 320px;
+      text-align: center;
+      line-height: 1.5; }
+  .down_container button {
+    width: 112px;
+    height: 32px;
+    background: #ffffff;
+    color: #01ba95;
+    border: 1px solid #01ba95;
+    border-radius: 16px;
+    position: absolute;
+    margin-left: -56px;
+    bottom: 50px; }
+    .down_container button:hover {
+      color: #ffffff;
+      background: #01ba95;
+      transition: all .3s ease-out; }
 
 .software_page_wrapper {
   margin: auto;
-  width: 1200px;
   height: 1119px;
-  border: 1px solid red; }
+  background: #ffffff; }
+  .software_page_wrapper .qrcode-box h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px; }
+  .software_page_wrapper .download_box p {
+    text-align: center;
+    width: 85%;
+    font-size: 17px;
+    line-height: 1.5; }
+
+.download_title {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 footer {
   height: 60px; }
