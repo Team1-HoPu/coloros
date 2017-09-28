@@ -4,5 +4,209 @@
 * Creator：   Jackzoom
 * CreatDate： 2017/09/21
 */
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+  a:hover {
+    color: #1b6d85; }
+
+html {
+  font-size: 12px; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left; }
+
+#nav_header {
+  height: 65px;
+  width: 1200px;
+  margin: auto;
+  overflow: hidden; }
+  #nav_header ul {
+    width: 1200px;
+    height: 65px;
+    margin: auto; }
+    #nav_header ul .header_logo {
+      margin-right: 250px;
+      line-height: 65px;
+      vertical-align: middle; }
+      #nav_header ul .header_logo img {
+        width: 120px;
+        height: 30px;
+        vertical-align: middle; }
+    #nav_header ul li {
+      margin-right: 40px;
+      height: 65px;
+      line-height: 65px;
+      display: block;
+      cursor: pointer; }
+      #nav_header ul li span a {
+        font-size: 1.3rem;
+        display: inline-block; }
+        #nav_header ul li span a:hover {
+          color: #3fbc81; }
+    #nav_header ul .header_home span:hover {
+      color: black; }
+
+#home_carousel {
+  height: 700px;
+  width: 1900px;
+  margin: auto;
+  overflow: hidden; }
+  #home_carousel ul {
+    border-top: 1px solid #ccc;
+    /*header分割线*/
+    width: 5700px;
+    float: left;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    transition: all .3s ease-in-out; }
+    #home_carousel ul li {
+      float: left;
+      display: inline-block; }
+      #home_carousel ul li img {
+        width: 1900px;
+        height: 700px; }
+
+.home_car_ico {
+  position: relative;
+  top: -50px;
+  z-index: 555;
+  left: 950px;
+  float: left; }
+  .home_car_ico span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    background: RGBA(0, 0, 0, 0.5); }
+  .home_car_ico .home_car_active {
+    background: RGBA(255, 255, 255, 0.8); }
+
+#home_function {
+  width: 1200px;
+  margin: 50px auto; }
+  #home_function ul {
+    width: 1300px;
+    height: 120px;
+    margin: auto; }
+    #home_function ul li {
+      width: 400px;
+      border-right: 1px solid #ccc;
+      margin-right: 30px; }
+      #home_function ul li:last-child {
+        border-right: 0; }
+      #home_function ul li .home_fun_img {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        text-align: center;
+        margin: 5px;
+        display: block; }
+        #home_function ul li .home_fun_img img {
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          vertical-align: middle; }
+      #home_function ul li .home_fun_info {
+        margin-top: 5px;
+        margin-left: 10px;
+        display: inline-block; }
+        #home_function ul li .home_fun_info:hover {
+          color: #3fbc81; }
+        #home_function ul li .home_fun_info h2 {
+          font-weight: normal;
+          font-size: 1.7rem;
+          overflow: hidden;
+          cursor: pointer; }
+          #home_function ul li .home_fun_info h2 > a:hover {
+            color: #3fbc81; }
+        #home_function ul li .home_fun_info span {
+          color: #666;
+          font-size: 1.4rem;
+          margin-top: 15px;
+          display: block; }
+
+#bottom_footer {
+  width: 700px;
+  margin: 30px auto; }
+  #bottom_footer .footer_links {
+    line-height: 10px;
+    margin: auto; }
+    #bottom_footer .footer_links li {
+      font-size: 1.3rem;
+      margin: 10px 0; }
+      #bottom_footer .footer_links li a:hover {
+        color: #3fbc81; }
+    #bottom_footer .footer_links li:nth-child(2n-1) {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 20px;
+      border-right: 1px solid #ccc; }
+    #bottom_footer .footer_links .footer_ico_weibo {
+      cursor: pointer; }
+      #bottom_footer .footer_links .footer_ico_weibo .footer_weibo_img {
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -5px;
+        margin-right: 10px; }
+      #bottom_footer .footer_links .footer_ico_weibo .footer_weibo_a {
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer; }
+    #bottom_footer .footer_links .footer_ico_weixin {
+      cursor: pointer;
+      padding-left: 20px;
+      padding-top: 5px; }
+      #bottom_footer .footer_links .footer_ico_weixin .footer_weixin_img {
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: -56px 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -10px;
+        margin-right: 10px; }
+      #bottom_footer .footer_links .footer_ico_weixin .footer_weixin_a {
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer; }
+      #bottom_footer .footer_links .footer_ico_weixin img {
+        display: none;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 555; }
+  #bottom_footer .footer_about {
+    clear: both;
+    width: 800px;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+    padding-left: 20px; }
 
 /*# sourceMappingURL=home.css.map */
