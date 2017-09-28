@@ -4,22 +4,28 @@
 }
 body{
   font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden;
 }
 html{
   font-size: 10px;
 }
-#safe-pc-main{
-
+@mixin center_width{
+  width: 1300px;
+}
+@mixin center_r_float{
+  float: right;
+}
+@mixin center_l_float{
+  float: left;
 }
 .safe-pc-header{
-  width: 120rem;
+  width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-
   .safe-pc-logo{
-    margin-top: 1.7rem;
-    height: 3rem;
-    width: 12rem;
+    margin-top: 1.5rem;
+    height: 30px;
+    width: 120px;
     float: left;
     a{
       background: transparent;
@@ -30,19 +36,22 @@ html{
       }
     }
   }
-
   .safe-pc-nav{
-    height: 6.5rem;
-    line-height: 6.5rem;
+    height: 65px;
+    line-height: 65px;
     float: right;
-
+    font-size: 17px;
     .safe-pc-list{
       list-style: none;
       li{
         padding: 0 1.5rem;
         float: left;
         a{
-         
+         text-decoration: none;
+          color: #333;
+          &:hover{
+            color: #3fbc81;
+          }
         }
       }
     }
@@ -54,14 +63,14 @@ html{
   width: 100%;
   background: -webkit-linear-gradient(top,#fff,#DFF7E2);
   .safe-pc-fullpage-width{
-    margin: auto;
     width: 120rem;
     position: relative;
     min-height: 700px;
     .safe-pc-fullpage-img{
+      @include center_l_float;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: -180px;
       &:after{
         display: table;
         content: "";
@@ -74,14 +83,17 @@ html{
       color: #000000;
       position: absolute;
       z-index: 1;
-      right: 0;
+      right: 237px;
       bottom: 250px;
-
-      b{
-        font-size: 35px;
+      h2{
+        font-size: 60px;
+        margin-bottom: 10px;
       }
       p{
-        background: #ebf9e4;
+      color: #333;
+      padding: 10px 0;
+      font-size: 18px;
+      background: linear-gradient(to bottom, #ebfff0 0%,#e8feec 100%);
       }
     }
   }
@@ -126,11 +138,41 @@ html{
 .safe-pc-property{
   padding:200px 0 ;
 }
+.safe-pc-center-back{
+  @include center_width;
+}
 .safe-pc-bg{
   background-color: #fafafa;
 }
  .safe-pc-center-text{
+   @include center_r_float;
    margin-top: 10rem;
+ }
+ .safe-pc-center-one{
+   h2{
+     font-size: 46px;
+     font-family: 'xianhei';
+     margin-bottom: 20px;
+     color: #000;
+   }
+   .safe-pc-center-always{
+     text-align: center;
+     font-size: 32px;
+     color: #373737;
+   }
+   .safe-pc-text-p{
+
+   }
+ }
+ .safe-pc-center-img{
+   @include center_l_float;
+ }
+ .safe-pc-center-pay-text{
+   @include center_l_float;
+   margin-top: 10rem;
+ }
+ .safe-pc-center-pay-img{
+   @include center_r_float;
  }
 .safe-pc-center-always{
   font-weight: "xiaohei";
@@ -168,5 +210,38 @@ html{
   }
 }
 .safe-pc-foot{
-
+  overflow: inherit;
+  min-height: 100px;
+  border-top: 1px solid #DDDDDD;
+    ul{
+      position: relative;
+      width: 675px;
+      margin: 0 auto;
+      font-family: 'zhunhei';
+      line-height: 60px;
+      .safe-pc-foot-border{
+        width: 1px;
+        height: 16px;
+        background: #dfdfdf;
+        display: inline-block ;
+        padding: 0px;
+        margin-top: 21px;
+      }
+      li{
+        display: inline-block;
+        margin-left: 20px;
+        a{
+          color: #555;
+          background: transparent;
+          text-decoration: none;
+          &:hover{
+            color: #3fbc81;
+          }
+        }
+      }
+    }
+  p{
+    color: #8c8c8c;
+    font-size: 13px;
+  }
 }
