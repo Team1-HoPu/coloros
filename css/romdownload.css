@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #F7F7F7; }
+
+.nav_container {
+  position: relative;
+  z-index: 999999;
+  background: #fff;
+  height: 65px;
+  overflow: hidden;
+  border-bottom: 1px solid #999; }
+
+.nav {
+  overflow: hidden;
+  width: 1200px;
+  height: 65px;
+  margin: 0 auto; }
+  .nav .logo {
+    float: left;
+    width: 120px;
+    height: 30px;
+    background: url("../img/romdownload_img/logo.jpg") no-repeat;
+    background-size: 120px 30px;
+    margin-top: 17px; }
+
+.nav_list {
+  float: right;
+  overflow: hidden;
+  list-style: none; }
+  .nav_list li {
+    float: left; }
+    .nav_list li a {
+      font-size: 16px;
+      text-decoration: none;
+      display: block;
+      padding: 0 4px;
+      color: #333; }
+      .nav_list li a .inner {
+        padding: 0 15px;
+        height: 65px;
+        line-height: 65px;
+        display: block; }
+
+.rom_page_wrapper {
+  height: 1319px; }
+
+.wrapper {
+  width: 1200px;
+  height: 39px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 39px;
+  margin: 110px auto 60px auto; }
+
+.down_container {
+  margin: auto;
+  width: 1200px; }
+  .down_container .download_box {
+    height: 500px;
+    width: 392px;
+    margin: 0 8px 8px 0;
+    background: #ffffff;
+    float: left;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px; }
+    .down_container .download_box p {
+      width: 200px;
+      font-size: 15px;
+      height: auto;
+      margin: auto;
+      text-align: left; }
+    .down_container .download_box .phone {
+      margin-top: 55px; }
+
+.software_page_wrapper {
+  margin: auto;
+  width: 1200px;
+  height: 1119px;
+  border: 1px solid red; }
+
+footer {
+  height: 60px; }
+
+.footer_list {
+  position: relative;
+  width: 675px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px; }
+  .footer_list li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #555; }
+  .footer_list .seperator {
+    width: 1px;
+    height: 16px;
+    background: #999;
+    display: block;
+    padding: 0;
+    margin-top: 21px; }
+
+/*# sourceMappingURL=romdownload.css.map */
