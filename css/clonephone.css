@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/*
+* Project：   ClonePhone StyleSheet
+* Creator：   wangmeiling
+* CreatDate： 2017/09/21
+*/
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+  a:hover {
+    color: #3fbc81;
+    text-decoration: none; }
+
+html {
+  font-size: 12px; }
+
+body {
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left; }
+
+#nav_header {
+  height: 65px;
+  width: 1200px;
+  margin: auto;
+  overflow: hidden; }
+  #nav_header ul {
+    width: 1200px;
+    height: 65px;
+    margin: auto; }
+    #nav_header ul .header_logo {
+      margin-right: 350px;
+      line-height: 65px;
+      vertical-align: middle; }
+      #nav_header ul .header_logo img {
+        width: 120px;
+        height: 30px;
+        vertical-align: middle; }
+    #nav_header ul li {
+      margin-right: 40px;
+      height: 65px;
+      line-height: 65px;
+      display: block;
+      cursor: pointer; }
+      #nav_header ul li span a {
+        font-size: 1.3rem;
+        display: inline-block; }
+        #nav_header ul li span a:hover {
+          color: #3fbc81; }
+    #nav_header ul .header_home span:hover {
+      color: black; }
+
+.clonephone_section1 {
+  background: #0E0E0E;
+  height: 690px;
+  color: #ffffff; }
+  .clonephone_section1 img {
+    width: 1200px;
+    height: 690px;
+    display: block;
+    margin: auto; }
+
+.clonephone_section1 .inner-wrapper {
+  height: 690px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+.clonephone_section1b {
+  width: 100vw;
+  height: 215px;
+  background: #ffffff; }
+  .clonephone_section1b .inner-warpper {
+    width: 1200px;
+    height: 215px;
+    margin: 0 auto;
+    position: relative; }
+    .item {
+      float: left;
+      width: 550px;
+      height: 215px;
+      text-align: center; }
+      .item .link {
+        font-size: 20px;
+        color: #585859; }
+    .item .i3 {
+      margin-left: 50px; }
+      .item .i3 .icon {
+        background-color: #3fbc81;
+        background-position: -149px bottom; }
+    .item .icon {
+      background: url("../img/clonephone_img/section1b_icon.png") no-repeat left top;
+      height: 90px;
+      width: 90px;
+      display: block;
+      margin: 40px auto 20px auto;
+      border-radius: 100%;
+      -webkit-transition: background-color 0.2s ease-out;
+      transition: background-color 0.2s ease-out; }
+    .item .i4 {
+      float: right;
+      margin-right: 50px; }
+      .item .i4 .icon {
+        background-color: #09bcff;
+        background-position: -234px bottom; }
+    .clearfix:before, .clearfix:after {
+      display: table;
+      line-height: 0;
+      content: ""; }
+    .clearfix:after {
+      clear: both; }
+
+.clonephone_section2 {
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative; }
+  .clonephone_section2 .inner-warpper {
+    height: 530px;
+    overflow: hidden; }
+  .clonephone_section2 .clonephone_section2_img {
+    position: absolute;
+    bottom: -5px;
+    left: 130px; }
+  .clonephone_section2 .clonephone_section2_text {
+    float: right;
+    margin: 190px 130px 25px auto;
+    width: 600px;
+    height: 135px; }
+
+.clonephone .clonephone_section2_text {
+  position: relative; }
+
+.inner-warpper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+  .inner-warpper .clonephone_section2_text {
+    text-align: left;
+    color: #373737;
+    z-index: 1; }
+
+.clonephone_section2_text h2 {
+  font-size: 46px;
+  width: 600px;
+  height: 59px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 130%; }
+
+.clonephone_section2_text p {
+  font-size: 18px;
+  line-height: 28px;
+  column-rule: #333; }
+
+.clonephone_section4 {
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative; }
+  .clonephone_section4 .inner-warpper {
+    height: 530px;
+    overflow: hidden; }
+  .clonephone_section4 .clonephone_section4_img {
+    position: absolute;
+    bottom: -5px;
+    right: 130px; }
+  .clonephone_section4 .clonephone_section4_text {
+    float: left;
+    margin: 190px auto 25px 130px;
+    width: 600px;
+    height: 160px; }
+  .clonephone_section4 .clonephone_section4_text {
+    position: relative; }
+  .clonephone_section4 .inner-warpper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .clonephone_section4 .inner-warpper .clonephone_section4_text {
+      text-align: right;
+      color: #373737;
+      z-index: 1; }
+  .clonephone_section4 .clonephone_section4_text h2 {
+    font-size: 46px;
+    width: 600px;
+    height: 59px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 130%; }
+  .clonephone_section4 .clonephone_section4_text p {
+    font-size: 18px;
+    line-height: 28px;
+    column-rule: #333; }
+
+.clonephone_section5 {
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative;
+  z-index: 2; }
+  .clonephone_section5 .inner-warpper {
+    height: 530px;
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+  .clonephone_section5 .clonephone_section5_text {
+    float: left;
+    margin: 190px auto 25px 130px;
+    width: 600px;
+    height: 200px; }
+  .clonephone_section5_text {
+    position: relative; }
+  .clonephone_section5 .inner-warpper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .clonephone_section5 .inner-warpper .clonephone_section5_text {
+      text-align: right;
+      color: #373737;
+      z-index: 1; }
+  .clonephone_section5 .clonephone_section5_text h2 {
+    font-size: 46px;
+    width: 560px;
+    height: 80px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 130%; }
+  .clonephone_section5 .clonephone_section5_text p {
+    font-size: 18px;
+    line-height: 80px;
+    column-rule: #333; }
+
+.clonephone_section5_img {
+  position: absolute;
+  bottom: 170px;
+  right: 130px; }
+
+.clonephone_foot_one {
+  width: 100%;
+  height: 80px; }
+  .clonephone_foot_one .inner-warpper {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative; }
+
+.clonephone_foot_one_text {
+  position: relative;
+  text-align: left;
+  color: #373737;
+  z-index: 1; }
+
+.clonephone_step {
+  text-align: center;
+  display: block;
+  line-height: 80px;
+  margin: auto;
+  width: 350px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #383838; }
+  .clonephone_step:hover {
+    color: #3fbc81;
+    text-decoration: underline; }
+
+.clonephone_section1b {
+  width: 100%;
+  height: 215px; }
+  .section1b_inner-wrapper {
+    width: 1200px;
+    height: 215px;
+    margin: auto; }
+    .section1b_item .icon {
+      background: url("../img/clonephone_img/section1b_icon.png") no-repeat;
+      height: 90px;
+      width: 90px;
+      display: block;
+      margin: 40px auto 20px auto;
+      border-radius: 100%; }
+    .section1b_i3 {
+      margin-left: 280px;
+      float: left; }
+      .section1b_i3 .icon {
+        background-color: #3fbc81;
+        background-position: -150px bottom;
+        position: relative; }
+        .section1b_i3_img {
+          position: absolute;
+          top: 2.5rem;
+          left: 2rem; }
+    .section1b_i4 {
+      float: right;
+      margin-right: 280px; }
+      .section1b_i4 .icon {
+        background-color: #09bcff;
+        background-position: -234px bottom; }
+  .clonephone_section1b .link {
+    font-size: 2rem;
+    display: block;
+    padding-left: .8rem;
+    text-decoration: none; }
+
+#bottom_footer {
+  width: 700px;
+  margin: 30px auto; }
+  #bottom_footer .footer_links {
+    line-height: 10px;
+    margin: auto; }
+    #bottom_footer .footer_links li {
+      font-size: 1.3rem;
+      margin: 10px 0; }
+      #bottom_footer .footer_links li a:hover {
+        color: #3fbc81; }
+    #bottom_footer .footer_links li:nth-child(2n-1) {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 20px;
+      border-right: 1px solid #ccc; }
+    #bottom_footer .footer_links .footer_ico_weibo {
+      cursor: pointer; }
+      #bottom_footer .footer_links .footer_ico_weibo .footer_weibo_img {
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -5px;
+        margin-right: 10px; }
+      #bottom_footer .footer_links .footer_ico_weibo .footer_weibo_a {
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer; }
+    #bottom_footer .footer_links .footer_ico_weixin {
+      cursor: pointer;
+      padding-left: 20px;
+      padding-top: 5px; }
+      #bottom_footer .footer_links .footer_ico_weixin .footer_weixin_img {
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: -56px 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -10px;
+        margin-right: 10px; }
+      #bottom_footer .footer_links .footer_ico_weixin .footer_weixin_a {
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        z-index: 999;
+        cursor: pointer; }
+      #bottom_footer .footer_links .footer_ico_weixin img {
+        display: none;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 80px auto;
+        z-index: 555; }
+  #bottom_footer .footer_about {
+    clear: both;
+    width: 800px;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+    padding-left: 20px; }
+
+/*# sourceMappingURL=clonephone.css.map */

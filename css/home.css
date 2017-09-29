@@ -12,10 +12,14 @@ a {
   text-decoration: none;
   color: #222; }
   a:hover {
-    color: #1b6d85; }
+    color: #3fbc81; }
 
 html {
   font-size: 12px; }
+
+body {
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
@@ -194,12 +198,11 @@ ul {
         display: none;
         width: 300px;
         height: 300px;
-        position: absolute;
-        top: 0;
+        position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
-        margin: auto;
+        margin: 80px auto;
         z-index: 555; }
   #bottom_footer .footer_about {
     clear: both;

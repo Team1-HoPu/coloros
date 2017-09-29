@@ -1,0 +1,310 @@
+/*
+* Project：   Safe StyleSheet
+* Creator：   Shilingling
+* CreatDate： 2017/09/21
+*/
+$nav_width:1200px;//容器宽度
+$car_width:1900px;//轮播图图片宽度
+$hover_color:#3fbc81;//文字hover颜色
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #222;
+  &:hover{
+    color: $hover_color;
+    text-decoration: none;
+  }
+}
+html{
+  font-size: 12px;
+}
+ul{
+  list-style: none;
+  li{
+    float: left;
+  }
+}
+body{
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden;
+}
+
+@mixin center_width{
+  width: 1300px;
+}
+@mixin center_r_float{
+  float: right;
+}
+@mixin center_l_float{
+  float: left;
+}
+
+//头部导航header
+#nav_header{
+  height: 65px;
+  width: $nav_width;
+  margin: auto;
+  overflow: hidden;
+  ul {
+    width: $nav_width;
+    height: 65px;
+    margin: auto;
+    .header_logo {
+      margin-right: 350px;
+      line-height: 65px;
+      vertical-align: middle;
+      img {
+        width: 120px;
+        height: 30px;
+        vertical-align: middle;
+      }
+    }
+    li {
+      margin-right: 40px;
+      height: 65px;
+      line-height: 65px;
+      display: block;
+      cursor: pointer;
+      span a{
+        font-size: 1.3rem;
+        display: inline-block;
+        &:hover {
+          color: $hover_color;
+        }
+      }
+    }
+    .header_home span{
+      &:hover{
+        color:black;
+      }
+    }
+  }
+}
+
+.safe-pc-fullpage{
+
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+  background:url("../img/safe_img/clean_bg.png-170912.png") repeat-x left top;
+  .safe-pc-fullpage-width{
+    width: 120rem;
+    margin: 0 auto;
+    position: relative;
+    min-height: 700px;
+    .safe-pc-fullpage-img{
+      @include center_l_float;
+      position: absolute;
+      bottom: 0;
+      left: -180px;
+      &:after{
+        display: table;
+        content: "";
+        clear: both;
+      }
+    }
+    .safe-pc-fullpage-text{
+      font-size: 20px;
+      width: 480px;
+      color: #000000;
+      position: absolute;
+      z-index: 1;
+      right: 237px;
+      bottom: 250px;
+      h2{
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+      p{
+      color: #333;
+      padding: 10px 0;
+      font-size: 18px;
+      background: linear-gradient(to bottom, #ebfff0 0%,#e8feec 100%);
+      }
+    }
+  }
+}
+.safe-pc-video{
+  font-weight: "xiaohei";
+  overflow: hidden;
+  width: 120rem;
+  margin: auto;
+  .safe-pc-video-item{
+    display: inline-block;
+    width: 30rem;
+    height: 16.5rem;
+    margin: 50px 50px;
+    text-align: center;
+     .safe-pc-video-item-text{
+       font-size: 16px;
+       margin: 37px auto 5px auto;
+       width: 6rem;
+       text-align: center;
+     }
+    .safe-pc-video-item-one-text{
+      background: rgba(244,233,183,0.4);
+    }
+    .safe-pc-video-item-two-text{
+      background: rgba(196,211,233,0.4);
+    }
+    .safe-pc-video-item-tree-text{
+      background: rgba(226,244,183,0.4);
+    }
+  }
+  .safe-pc-video-item-one{
+    background: url("../img/safe_img/cleanvideo.jpg") no-repeat center center;
+  }
+  .safe-pc-video-item-two{
+    background: url("../img/safe_img/safevideo.jpg") no-repeat center center;
+  }
+  .safe-pc-video-item-tree{
+    background: url("../img/safe_img/payvideo.jpg") no-repeat center center;
+  }
+}
+.safe-pc-property{
+  padding:200px 0 ;
+}
+.safe-pc-center-back{
+  @include center_width;
+  margin: 0 auto;
+}
+.safe-pc-bg{
+  background-color: #fafafa;
+}
+ .safe-pc-center-text{
+   @include center_r_float;
+   margin-top: 10rem;
+ }
+ .safe-pc-center-one{
+   h2{
+     font-size: 46px;
+     font-family: 'xianhei';
+     margin-bottom: 20px;
+     color: #000;
+   }
+   .safe-pc-center-always{
+    .safe-pc-center-text-list{
+      text-align: center;
+    }
+     font-size: 30px;
+     color: #373737;
+   }
+   .safe-pc-text-p{
+     color: #333;
+     font-size: 20px;
+   }
+ }
+ .safe-pc-center-img{
+   @include center_l_float;
+ }
+ .safe-pc-center-pay-text{
+   @include center_l_float;
+   margin-top: 10rem;
+ }
+ .safe-pc-center-pay-img{
+   @include center_r_float;
+ }
+.safe-pc-center-always{
+  font-weight: "xiaohei";
+  .safe-pc-center-text-item{
+    display: inline-block;
+  }
+  .safe-pc-center-text-wire{
+    border: 1px solid #000000;
+    height: 25px;
+    display: inline-block;
+    margin:-1px 20px;
+
+  }
+  .safe-pc-center-text-list{
+    display: inline-block;
+  }
+}
+.safe-pc-center-one{
+  width: 850px;
+  .safe-pc-text-h{
+    font-size: 3.5rem;
+  }
+  .safe-pc-center-always{
+    .safe-pc-center-text-list{
+      span{
+        font-size: 30px;
+      }
+    }
+  }
+  .safe-pc-text-p{
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #333;
+  }
+}
+.safe-pc-foot{
+  overflow: inherit;
+  min-height: 100px;
+  border-top: 1px solid #DDDDDD;
+    ul{
+      position: relative;
+      width: 675px;
+      margin: 0 auto;
+      font-family: 'zhunhei';
+      line-height: 60px;
+      .safe-pc-foot-border{
+        width: 1px;
+        height: 16px;
+        background: #dfdfdf;
+        display: inline-block ;
+        padding: 0px;
+        margin-top: 21px;
+      }
+      li{
+        display: inline-block;
+        margin-left: 20px;
+        a{
+          color: #555;
+          background: transparent;
+          text-decoration: none;
+          &:hover{
+            color: #3fbc81;
+          }
+        }
+      }
+    }
+  p{
+    color: #8c8c8c;
+    font-size: 13px;
+  }
+}
+.safe-pc-foot-we{
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.safe-pc-foot-weibo{
+  background: url("../img/clonephone_img/foot_icon.png") no-repeat 0;
+  &:hover{
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat -32px;
+  }
+}
+.safe-pc-foot-weixin{
+  position: relative;
+  background: url("../img/clonephone_img/foot_icon.png") no-repeat -64px;
+  &:hover{
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat -96px;
+}
+}
+.safe-pc-foot-wei:hover .safe-pc-foot-hov{
+display: block;
+}
+.safe-pc-foot-hov{
+  position: absolute;
+  top: -300px;
+  left: 500px;
+  width: 300px;
+  height: 300px;
+  z-index: 9999;
+  display: none;
+}

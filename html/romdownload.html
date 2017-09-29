@@ -5,8 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>『ColorOS 3.0 ROM官方下载』 OPPO手机系统官方网站</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/romdownload.css"/>
 </head>
 <body>
+<div id="header">
 
+
+<header id="nav_header">
+    <ul>
+        <li class="header_logo"><img src="../img/home_img/logo.jpg" alt="ColorOS官方网站" title="ColorOS 3.1"/></li>
+        <li class="header_home"><span title="首页"><a href="../index.html">首&emsp;页</a></span></li>
+        <li><span title="ColorOS 3.1"><a href="../html/coloros3_1.html">ColorOS 3.1</a></span></li>
+        <li><span title="手机搬家"><a href="../html/clonephone.html">手机搬家</a></span></li>
+        <li><span title="安全"><a href="../html/safe.html">安全</a></span></li>
+        <li><span title="下载"><a href="../html/romdownload.html">下载</a></span></li>
+        <li><span title="论坛"><a href="http://bbs.coloros.com/">论坛</a></span></li>
+        <li><span title="软件商店"><a href="http://store.oppomobile.com/">软件商店</a></span></li>
+        <li><span title="云服务"><a href="../html/cloudservice.html">云服务</a></span></li>
+    </ul>
+</header>
+</div>
+<div class="rom_page_wrapper">
+    <div class="wrapper">
+        热门机型ROM下载
+    </div>
+    <div class="down_container"></div>
+</div>
+<div class="software_page_wrapper">
+    <div class="wrapper">
+        <h1 class="download_title">热门应用下载</h1>
+        <div class="down_container down_container_box">
+        </div>
+    </div>
+</div>
+<footer><div class="section footer text-center">
+    <ul class="footer_list">
+        <li>OPPO官网</li>
+        <li class="seperator"></li>
+        <li>开放平台</li>
+        <li class="seperator"></li>
+        <li>帮助</li>
+        <li class="seperator"></li>
+        <li>联系我们</li>
+        <li class="seperator"></li>
+        <li>
+            <a id="weibo" href="#">
+                <span class="weibo_bg"></span>新浪微博
+            </a>
+            <a id="wechat" href="#">
+                <span class="wechat_bg"></span>微信公众号
+            </a>
+        </li>
+    </ul>
+    <p>Copyright © 广东欧珀移动通信有限公司 2004-2017. All Rights Reserved. 网站备案号 : 粤ICP备11013528号-7</p>
+</div></footer>
 </body>
+<script  src="../js/romdownload.js"></script>
+<script>
+    var config = {
+        width:"392px",
+        height:"500px",
+        container:document.getElementsByClassName('down_container'),
+        title:["OPPO R11 Plus","OPPO R11","OPPO R9sPlus","OPPO R9s","OPPO R9sk","更多机型"],
+        content:["系统版本：正式版-170618文件大小：1311更新时间：2017-07-03",
+            "系统版本：正式版-170618文件大小：1310 MB更新时间：2017-07-05",
+            "系统版本：正式版-161121文件大小：1014 MB更新时间：2017-03-29",
+            "系统版本：正式版-161105文件大小：1004 MB更新时间：2016-11-16",
+            "系统版本：正式版-161126文件大小：1045 MB更新时间：2017-03-29",
+            "需要更多机型下载请点击前往"],
+        src: ["../img/romdownload_img/rom_img_R11Plus.png","../img/romdownload_img/rom_img_R11.png","../img/romdownload_img/rom_img_R9sPlus.png",
+            "../img/romdownload_img/rom_img_R9s.png","../img/romdownload_img/rom_img_R9s.png","../img/romdownload_img/rom_img_more.jpg"
+        ],
+        qrcodebox:{
+            flag:false,
+            img_src:["../img/romdownload_img/rom_ico_Rq.png"],
+            title:["","","","","",""],
+            content:["","","","","",""],
+            qrcodebox_width:"100%",
+            qrcodebox_height:"290px"
+        }
+    };
+    new Mixed(config);
+
+
+    var config1 = {
+        width:"392px",
+        height:"392px",
+        container:document.getElementsByClassName('down_container_box'),
+        title:["软件商店","OPPO社区","游戏中心","书城","查找手机","ColorOs社区"],
+        content:["oppo官方正版，安全的app下载渠道，拥有海量资源。提供软件下载和管理",
+            "oppo用户的交流平台",
+            "提供下载时下热门的游戏下载服务，丰富有趣的咨询及游戏礼包和丰富的精彩活动",
+            "提供海量电子书阅读服务，支持主流电纸书格式阅读。",
+            "oppo手机丢失查找工具，避免手机上的隐私数据泄露，并帮助找回手机",
+            "为oppo手机用户提供产品交流与反馈，玩机4技巧和资源分享的平台"],
+        src: ["../img/romdownload_img/rom_ico_appstore.jpg","../img/romdownload_img/rom_ico_club.jpg","../img/romdownload_img/rom_ico_game.jpg",
+            "../img/romdownload_img/rom_ico_read.jpg","../img/romdownload_img/rom_ico_search.jpg","../img/romdownload_img/rom_ico_read.jpg"
+        ],
+        qrcodebox:{
+            flag:true,
+            img_src:["../img/romdownload_img/rom_ico_Rq.png"],
+            title:["软件商店","OPPO社区","游戏中心","书城","查找手机","ColorOs社区"],
+            content:["扫一扫"],
+            qrcodebox_width:"100%",
+            qrcodebox_height:"290px"
+        }
+
+    };
+    new Mixed(config1);
+    var download_container = document.getElementsByClassName("software_page_wrapper");
+    var download_box =  download_container[0].getElementsByClassName("download_box");
+    console.log(download_box);
+    var qrcodebox =download_container[0].getElementsByClassName("qrcode-box");
+    console.log(qrcodebox);
+    for(var j =0;j<6;j++){
+        (function(n){
+            download_box[n].addEventListener("mouseover",function(){
+                qrcodebox[n].style.display = "block";
+            });
+            download_box[n].addEventListener("mouseout",function(){
+                qrcodebox[n].style.display = "none";
+            });
+
+        })(j);
+    }
+
+</script>
 </html>

@@ -1,0 +1,262 @@
+
+/*
+* Project：   RomDownLoad StyleSheet
+* Creator：   Guokangjin
+* CreatDate： 2017/09/21
+*/
+$nav_width:1200px;//容器宽度
+$car_width:1900px;//轮播图图片宽度
+$font-color:#3fbc81;
+$hover_color:#3fbc81;//文字hover颜色
+$body-bgcolor:#F7F7F7;
+$white-color:#ffffff;
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #222;
+  &:hover{
+    color: $hover_color;
+    text-decoration: none;
+  }
+}
+html{
+  font-size: 12px;
+}
+body{
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+  li{
+    float: left;
+  }
+}
+
+@mixin foot-hover($left){
+  background-position: $left 0;
+}
+@mixin border-radius($radius){
+  border-radius:$radius ;
+}
+@mixin foot-icon(){
+  display:inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/clonephone_img/foot_icon.png") no-repeat;
+  vertical-align: middle;
+}
+
+//header
+
+//头部导航header
+#header{
+
+  width: 100%;
+  border-bottom: .5px solid #ccc;
+#nav_header{
+  height: 65px;
+  width: $nav_width;
+  margin: auto;
+  overflow: hidden;
+
+  ul {
+    width: $nav_width;
+    height: 65px;
+    margin: auto;
+    .header_logo {
+      margin-right: 350px;
+      line-height: 65px;
+      vertical-align: middle;
+      img {
+        width: 120px;
+        height: 30px;
+        vertical-align: middle;
+      }
+    }
+    li {
+      margin-right: 40px;
+      height: 65px;
+      line-height: 65px;
+      display: block;
+      cursor: pointer;
+      span a{
+        font-size: 1.3rem;
+        display: inline-block;
+        &:hover {
+          color: $hover_color;
+        }
+      }
+    }
+    .header_home span{
+      &:hover{
+        color:black;
+      }
+    }
+  }
+}
+}
+
+
+.rom_page_wrapper{
+  height: 1200px;
+}
+.wrapper{
+  width: 1200px;
+  height: 39px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 39px;
+  margin:110px auto 60px auto;
+}
+
+.down_container{
+  text-align: center;
+  margin: auto;
+  width: 1210px;
+  height: 1200px;
+
+  .download_box{
+    height: 500px;
+    width: 392px;
+    margin: 0 8px 8px 0;
+    background:$white-color;
+    float: left;
+    text-align: center;
+    @include border-radius(5px);
+    position: relative;
+    border:  1px solid #d8d8d8;
+    h3{
+      margin-top: 35px;
+      font-size: 24px;
+    }
+    p{
+      width: 152px;
+      font-size: 13px;
+      height: auto;
+      margin: auto;
+      text-align: left;
+    }
+    .phone{
+      margin-top:55px;
+    }
+  }
+  .img{
+      margin-top: 40px;
+      width: 174px;
+      height: 174px;
+  }
+  .jqbox{
+    height: 392px;
+    position: relative;
+    &:hover .qrcode-box{
+      display: block;
+    }
+    img{
+      margin-top: 55px;
+    }
+    .download_txt{
+      width: 320px;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+  button{
+    width: 112px;
+    height: 32px;
+    background: $white-color;
+    color: $font-color;
+    border: 1px solid $font-color;
+    @include border-radius(16px);
+    position: absolute;
+    margin-left: -56px;
+    bottom: 50px;
+    &:hover {
+      color: $white-color;
+      background: $font-color;
+      transition: all .3s ease-out;
+    }
+  }
+}
+.software_page_wrapper{
+  margin: auto;
+  height: 1119px;
+  background: $white-color;
+.qrcode-box h3{
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+  .download_box p{
+    text-align: center;
+    width: 85%;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+.download_title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer{
+  height: 60px;
+}
+.footer_list{
+  position: relative;
+  width:675px;
+  margin: 0 auto;
+  height: 60px;
+  line-height:60px;
+
+  li{
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #555;
+    vertical-align: middle;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+      color: #000000;
+    }
+    &:hover{
+      color: $font-color;
+    }
+
+    #weibo:hover{
+      color: $font-color;
+      .weibo_bg{
+        @include foot-hover(-32px)
+      }
+    }
+    #wechat:hover{
+      color:  $font-color;
+      .wechat_bg{
+        @include foot-hover(-96px);
+      }
+    }
+  }
+
+  .weibo_bg{
+    @include foot-icon;
+    margin: 0 10px 0 0;
+  }
+  .wechat_bg{
+    @include foot-icon;
+    background-position: -64px 0;
+    margin: 0 10px;
+  }
+  .seperator{
+    width: 1px;
+    height: 16px;
+    background: #999;
+    display: block;
+    padding: 0;
+    margin-top:21px;
+  }
+}

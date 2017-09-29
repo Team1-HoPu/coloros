@@ -15,7 +15,6 @@ $freamfont_Color:#D7DADD;
 a,h1{
   color: $freamfont_Color;
   text-decoration: none;
-//  cursor: pointer;
   &:hover{
     color:#FEFBFC;
     text-decoration: none;
@@ -34,6 +33,7 @@ html{
 body,html{
   height: 100%;
 }
+
 body{
 
   background: #137ac6;

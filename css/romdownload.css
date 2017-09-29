@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*
+* Project：   RomDownLoad StyleSheet
+* Creator：   Guokangjin
+* CreatDate： 2017/09/21
+*/
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+  a:hover {
+    color: #3fbc81;
+    text-decoration: none; }
+
+html {
+  font-size: 12px; }
+
+body {
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left; }
+
+#header {
+  width: 100%;
+  border-bottom: .5px solid #ccc; }
+  #header #nav_header {
+    height: 65px;
+    width: 1200px;
+    margin: auto;
+    overflow: hidden; }
+    #header #nav_header ul {
+      width: 1200px;
+      height: 65px;
+      margin: auto; }
+      #header #nav_header ul .header_logo {
+        margin-right: 350px;
+        line-height: 65px;
+        vertical-align: middle; }
+        #header #nav_header ul .header_logo img {
+          width: 120px;
+          height: 30px;
+          vertical-align: middle; }
+      #header #nav_header ul li {
+        margin-right: 40px;
+        height: 65px;
+        line-height: 65px;
+        display: block;
+        cursor: pointer; }
+        #header #nav_header ul li span a {
+          font-size: 1.3rem;
+          display: inline-block; }
+          #header #nav_header ul li span a:hover {
+            color: #3fbc81; }
+      #header #nav_header ul .header_home span:hover {
+        color: black; }
+
+.rom_page_wrapper {
+  height: 1200px; }
+
+.wrapper {
+  width: 1200px;
+  height: 39px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 39px;
+  margin: 110px auto 60px auto; }
+
+.down_container {
+  text-align: center;
+  margin: auto;
+  width: 1210px;
+  height: 1200px; }
+  .down_container .download_box {
+    height: 500px;
+    width: 392px;
+    margin: 0 8px 8px 0;
+    background: #ffffff;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #d8d8d8; }
+    .down_container .download_box h3 {
+      margin-top: 35px;
+      font-size: 24px; }
+    .down_container .download_box p {
+      width: 152px;
+      font-size: 13px;
+      height: auto;
+      margin: auto;
+      text-align: left; }
+    .down_container .download_box .phone {
+      margin-top: 55px; }
+  .down_container .img {
+    margin-top: 40px;
+    width: 174px;
+    height: 174px; }
+  .down_container .jqbox {
+    height: 392px;
+    position: relative; }
+    .down_container .jqbox:hover .qrcode-box {
+      display: block; }
+    .down_container .jqbox img {
+      margin-top: 55px; }
+    .down_container .jqbox .download_txt {
+      width: 320px;
+      text-align: center;
+      line-height: 1.5; }
+  .down_container button {
+    width: 112px;
+    height: 32px;
+    background: #ffffff;
+    color: #3fbc81;
+    border: 1px solid #3fbc81;
+    border-radius: 16px;
+    position: absolute;
+    margin-left: -56px;
+    bottom: 50px; }
+    .down_container button:hover {
+      color: #ffffff;
+      background: #3fbc81;
+      transition: all .3s ease-out; }
+
+.software_page_wrapper {
+  margin: auto;
+  height: 1119px;
+  background: #ffffff; }
+  .software_page_wrapper .qrcode-box h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px; }
+  .software_page_wrapper .download_box p {
+    text-align: center;
+    width: 85%;
+    font-size: 17px;
+    line-height: 1.5; }
+
+.download_title {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+footer {
+  height: 60px; }
+
+.footer_list {
+  position: relative;
+  width: 675px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px; }
+  .footer_list li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #555;
+    vertical-align: middle;
+    cursor: pointer; }
+    .footer_list li a {
+      text-decoration: none;
+      color: #000000; }
+    .footer_list li:hover {
+      color: #3fbc81; }
+    .footer_list li #weibo:hover {
+      color: #3fbc81; }
+      .footer_list li #weibo:hover .weibo_bg {
+        background-position: -32px 0; }
+    .footer_list li #wechat:hover {
+      color: #3fbc81; }
+      .footer_list li #wechat:hover .wechat_bg {
+        background-position: -96px 0; }
+  .footer_list .weibo_bg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat;
+    vertical-align: middle;
+    margin: 0 10px 0 0; }
+  .footer_list .wechat_bg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat;
+    vertical-align: middle;
+    background-position: -64px 0;
+    margin: 0 10px; }
+  .footer_list .seperator {
+    width: 1px;
+    height: 16px;
+    background: #999;
+    display: block;
+    padding: 0;
+    margin-top: 21px; }
+
+/*# sourceMappingURL=romdownload.css.map */

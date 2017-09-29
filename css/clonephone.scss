@@ -1,0 +1,506 @@
+/*
+* Project：   ClonePhone StyleSheet
+* Creator：   wangmeiling
+* CreatDate： 2017/09/21
+*/
+
+$nav_width:1200px;//容器宽度
+$car_width:1900px;//轮播图图片宽度
+$hover_color:#3fbc81;//文字hover颜色
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #222;
+  &:hover{
+    color: $hover_color;
+    text-decoration: none;
+  }
+}
+html{
+  font-size: 12px;
+}
+body{
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+  li{
+    float: left;
+  }
+}
+//头部
+#nav_header{
+  height: 65px;
+  width: $nav_width;
+  margin: auto;
+  overflow: hidden;
+  ul {
+    width: $nav_width;
+    height: 65px;
+    margin: auto;
+    .header_logo {
+      margin-right: 350px;
+      line-height: 65px;
+      vertical-align: middle;
+      img {
+        width: 120px;
+        height: 30px;
+        vertical-align: middle;
+      }
+    }
+    li {
+      margin-right: 40px;
+      height: 65px;
+      line-height: 65px;
+      display: block;
+      cursor: pointer;
+      span a{
+        font-size: 1.3rem;
+        display: inline-block;
+        &:hover {
+          color: $hover_color;
+        }
+      }
+    }
+    .header_home span{
+      &:hover{
+        color:black;
+      }
+    }
+  }
+}
+
+
+
+//头部下的大图片
+.clonephone_section1{
+  background: #0E0E0E;
+  height: 690px;
+  color: #ffffff;
+  img{
+    width: 1200px;
+    height: 690px;
+    display: block;
+    margin: auto;
+  }
+}
+.clonephone_section1 .inner-wrapper{
+  height: 690px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+//大图片下
+.clonephone_section1b{
+  width: 100vw;
+  height: 215px;
+  background: #ffffff;
+  .inner-warpper{
+    width: 1200px;
+    height: 215px;
+    margin: 0 auto;
+    position: relative;
+
+    @at-root .item{
+      float:left;
+      width: 550px;
+      height: 215px;
+      text-align: center;
+      .link{
+        font-size: 20px;
+        color: #585859;
+      }
+    }
+    @at-root .item .i3{
+      margin-left: 50px;
+      .icon{
+        background-color: $hover_color;
+        background-position: -149px bottom;
+      }
+    }
+    @at-root .item .icon {
+      background: url("../img/clonephone_img/section1b_icon.png") no-repeat left top;
+      height: 90px;
+      width: 90px;
+      display: block;
+
+      margin: 40px auto 20px auto;
+      border-radius: 100%;
+      -webkit-transition: background-color 0.2s ease-out;
+      transition: background-color 0.2s ease-out;
+    }
+    @at-root .item .i4{
+      float: right;
+      margin-right: 50px;
+      .icon{
+        background-color: #09bcff;
+        background-position: -234px bottom;
+      }
+    }
+
+    @at-root .clearfix:before, .clearfix:after {
+      display: table;
+      line-height: 0;
+      content: "";
+    }
+    @at-root .clearfix:after {
+      clear: both;
+    }
+
+  }
+}
+
+
+//操作便捷
+//零流量换机
+.clonephone_section2{
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative;
+  .inner-warpper{
+    height: 530px;
+    overflow: hidden;
+  }
+  .clonephone_section2_img{
+    position: absolute;
+    bottom: -5px;
+    left: 130px;
+  }
+  .clonephone_section2_text{
+    float: right;
+    margin: 190px 130px 25px auto;
+    width: 600px;
+    height:135px;
+  }
+}
+.clonephone .clonephone_section2_text{
+  position: relative;
+}
+.inner-warpper{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  .clonephone_section2_text{
+    text-align: left;
+    color: #373737;
+    z-index: 1;
+  }
+
+}
+.clonephone_section2_text h2{
+  font-size: 46px;
+  width: 600px;
+  height: 59px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 130%;
+
+}
+.clonephone_section2_text p{
+  font-size: 18px;
+  line-height: 28px;
+  column-rule: #333;
+}
+
+//安全可靠
+
+.clonephone_section4 {
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative;
+  .inner-warpper {
+    height: 530px;
+    overflow: hidden;
+  }
+  .clonephone_section4_img {
+    position: absolute;
+    bottom: -5px;
+    right: 130px;
+
+  }
+
+  .clonephone_section4_text {
+    float: left;
+    margin: 190px auto 25px 130px;
+    width: 600px;
+    height: 160px;
+
+  }
+  .clonephone_section4_text {
+    position: relative;
+  }
+  .inner-warpper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .clonephone_section4_text {
+      text-align: right;
+      color: #373737;
+      z-index: 1;
+    }
+
+  }
+  .clonephone_section4_text h2 {
+    font-size: 46px;
+    width: 600px;
+    height: 59px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 130%;
+
+  }
+  .clonephone_section4_text p {
+    font-size: 18px;
+    line-height: 28px;
+    column-rule: #333;
+  }
+}
+
+
+//传输进度更清晰
+.clonephone_section5 {
+  background: #ffffff;
+  width: 1480px;
+  height: 530px;
+  margin: 45px auto 0 auto;
+  position: relative;
+  z-index: 2;
+  .inner-warpper {
+    height: 530px;
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+  }
+  .clonephone_section5_text {
+    float: left;
+    margin: 190px auto 25px 130px;
+    width: 600px;
+    height: 200px;
+
+  }
+  @at-root .clonephone_section5_text {
+    position: relative;
+  }
+  .inner-warpper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .clonephone_section5_text {
+      text-align: right;
+      color: #373737;
+      z-index: 1;
+    }
+
+  }
+  .clonephone_section5_text h2 {
+    font-size: 46px;
+    width: 560px;
+    height: 80px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 130%;
+
+  }
+  .clonephone_section5_text p {
+    font-size: 18px;
+    line-height: 80px;
+    column-rule: #333;
+  }
+}
+
+.clonephone_section5_img {
+  position: absolute;
+  bottom: 170px;
+  right: 130px;
+}
+
+//底部手机搬家教程
+.clonephone_foot_one{
+  width: 100%;
+  height: 80px;
+  .inner-warpper{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+.clonephone_foot_one_text{
+  position: relative;
+  text-align: left;
+  color: #373737;
+  z-index: 1;
+}
+.clonephone_step{
+  text-align: center;
+  display: block;
+  line-height: 80px;
+  margin: auto;
+  width: 350px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #383838;
+  &:hover{
+    color: $hover_color;
+    text-decoration: underline;
+  }
+}
+
+//视频教程
+.clonephone_section1b{
+  width: 100%;
+  height: 215px;
+  @at-root .section1b_inner-wrapper{
+    width: 1200px;
+    height: 215px;
+    margin: auto;
+
+    @at-root .section1b_item {
+
+      .icon{
+        background: url("../img/clonephone_img/section1b_icon.png")no-repeat;
+        height: 90px;
+        width: 90px;
+        display: block;
+        margin: 40px auto 20px auto;
+        border-radius: 100%;
+
+
+      }
+    }
+    @at-root .section1b_i3{
+      margin-left: 280px;
+      float:left;
+      .icon{
+        background-color: $hover_color;
+        background-position: -150px bottom;
+        position: relative;
+        @at-root .section1b_i3_img{
+          position: absolute;
+          top: 2.5rem;
+          left: 2rem;
+        }
+      }
+
+    }
+    @at-root .section1b_i4{
+      float:right;
+      margin-right: 280px;
+      .icon{
+        background-color: #09bcff;
+        background-position: -234px bottom;
+      }
+    }
+  }
+  .link{
+    font-size: 2rem;
+    display: block;
+    padding-left: .8rem;
+    text-decoration: none;
+  }
+}
+
+//底部导航
+#bottom_footer{
+  width: $nav_width/2+100;
+  margin: 30px auto;
+  .footer_links{
+
+    line-height: 10px;
+    margin: auto;
+    li{
+      font-size: 1.3rem;
+      margin: 10px 0;
+      a:hover{
+        color: $hover_color;
+      }
+    }
+    li:nth-child(2n-1){
+      height: 20px;
+      line-height: 20px;
+      padding:0 20px;
+      border-right: 1px solid #ccc;
+    }
+    .footer_ico_weibo{
+      cursor: pointer;
+      .footer_weibo_img{
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -5px;
+        margin-right: 10px;
+      }
+      .footer_weibo_a{
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+      }
+    }
+    .footer_ico_weixin{
+      cursor: pointer;
+      padding-left: 20px;
+      padding-top: 5px;
+      .footer_weixin_img{
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: -56px 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -10px;
+        margin-right: 10px;
+
+      }
+      .footer_weixin_a{
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        z-index: 999;
+        cursor: pointer;
+      }
+      img{
+        display: none;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left:0;
+        margin: 80px auto;
+        z-index: 555;
+      }
+    }
+  }
+  .footer_about{
+    clear: both;
+    width: $nav_width/2+200;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+    padding-left: 20px;
+
+  }
+}
+
+
+

@@ -20,6 +20,10 @@ a{
 html{
   font-size: 12px;
 }
+body{
+  font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
+  overflow-x: hidden;
+}
 ul{
   list-style: none;
   li{
@@ -27,18 +31,21 @@ ul{
   }
 }
 
-
 //头部导航header
+#header{
+  border-bottom: .5px solid #ccc;
 #nav_header{
   height: 65px;
   width: $nav_width;
   margin: auto;
-  overflow: hidden;
   text-align: right;
+
+
   ul {
     width: $nav_width;
     height: 65px;
     margin: auto;
+    overflow: hidden;
     .header_logo {
       margin-right: 350px;
       line-height: 65px;
@@ -67,18 +74,23 @@ ul{
     }
   }
 }
+}
 
 //coloros视频展示
 
 #coloros_header{
+
   height: auto;
-  width: 100%;
-  border-top: .5px solid #ccc;
+//  width: 5000px;
+
   #coloros_header_show{
-    width: 1200px;
     margin: auto;
     padding-top: 100px;
     text-align: center;
+    div{
+      width: 1060px;
+      margin: auto
+    }
     .coloros_header_textPic{
       width: 700px;
       display: block;
@@ -104,18 +116,34 @@ ul{
   }
 }
 //coloros锚链接切换
-#coloros_anchor_links{
-  position: absolute;
+
+.coloros_anchor_links_fixed{
+  animation: show_down .7s forwards ease-in-out;
+  animation-delay: 0s;
+//  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 80px;
   z-index: 9999;
-  margin-top: -80px;
+  margin:auto;
+}
+.coloros_anchor_links{
+
+  position: absolute;
   height: 100px;
   width: 100%;
+  margin:-80px auto;
   background: #fff;
+
   ul{
     width: $nav_width;
-    padding-left: 400px;
+    height: 96px;
     margin: auto;
+    display: block;
     li{
+      background: #fff;
+      padding-left:80px;
       a{
         font-size: 2rem;
         width: 210px;
@@ -130,7 +158,8 @@ ul{
       }
 //锚链接雪碧图
       .coloros_anchor_quick{
-        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat 60px -65px;
+        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat 60px 38px;
+
       }
       .coloros_anchor_ease{
         background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -185px -65px;
@@ -144,6 +173,803 @@ ul{
     }
   }
 }
+//组合内容
+
+//王美玲
+/*  Branch Quick  */
+#coloros3_1-quick_group{
+  width: 100%;
+  //  overflow: hidden;
+}
+
+.coloros3_1-topic18{
+  background: linear-gradient(to bottom,#f6f6f6,#ffffff 50%,#ffffff);
+  height: 975px;
+  img{
+    margin-top: 70px;
+    margin-bottom: -10px;
+    animation-fill-mode: both;
+
+  }
+
+}
+.coloros3_1-section {
+  text-align: center;
+  overflow: hidden;
+}
+#coloros3_1-speed{
+  text-decoration: none;
+}
+
+.inner-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+
+  @at-root .coloros3_1_section_2-text{
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    color: #373737;
+    z-index: 1;
+    animation: fadeInUp 1.2s;
+
+    h3{
+//      animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+      //      animation-delay: 0s;
+      padding-bottom: 15px;
+      font-size: 42px;
+      font-weight: normal;
+      color: #373737;
+    }
+    p{
+//      animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+      //      animation-delay: 0.3s;
+      font-size: 20px;
+      color: #373737;
+
+
+    }
+  }
+}
+
+
+.coloros3_1-topic2 {
+  background: #000 url("../img/coloros3_1_img/s2_bg.jpg-170912.jpg") no-repeat center top;
+  background-size: contain;
+  height: 1055px;
+  overflow: hidden;
+  text-align: center;
+  .coloros3_1_section_3-img {
+    margin: 70px auto 100px auto;
+    .inner{
+      position: relative;
+      width: 320px;
+      height: 655px;
+      margin: auto;
+    }
+  }
+  .inner-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .coloros3_1_section_3-text{
+      position: relative;
+      text-align: center;
+      padding-top: 100px;
+      color: #373737;
+      z-index: 1;
+      animation: fadeInUp 1.2s;
+      h3{
+        padding-bottom: 15px;
+        font-size: 42px;
+        color: #fff;
+      }
+      p{
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 28px;
+      }
+    }
+
+  }
+}
+
+.coloros3_1-topic3 {
+  background: #000 url("../img/coloros3_1_img/s3_bg.jpg-170912.jpg") no-repeat center bottom;
+  background-size: contain;
+  height: 1030px;
+  overflow: hidden;
+  text-align: center;
+
+
+  .inner-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .coloros3_1_section_4-img {
+      margin: 120px auto 100px auto;
+      position: relative;
+//      .animated {
+//        animation-fill-mode: both;
+//      }
+    }
+    @at-root .coloros3_1_section_4-lines {
+      position: absolute;
+      left: 250px;
+      top: 145px;
+      .section_4_div {
+        width: 0;
+      }
+
+      @at-root .line1 {
+        height: 6px;
+        border-radius: 6px;
+        transition: width 1s linear 0.5s;
+        background: #e6e6e6;
+        width: 240px;
+      }
+
+      @at-root .line2 {
+        width: 160px;
+        background: linear-gradient(to right, #72cf63, #49c192);
+        margin-top: 20px;
+      }
+
+      @at-root.line3 {
+        width: 520px;
+        background: #e6e6e6;
+        margin-top: 60px;
+      }
+
+      @at-root .line4 {
+        width: 425px;
+        background: linear-gradient(to right, #72cf63, #49c192);
+        margin-top: 20px;
+      }
+
+      @at-root .line5 {
+        width: 390px;
+        background: #e6e6e6;
+        margin-top: 65px;
+      }
+
+      @at-root .line6 {
+        width: 315px;
+        background: linear-gradient(to right, #72cf63, #49c192);
+        margin-top: 20px;
+      }
+
+      @at-root .line7 {
+        width: 650px;
+        background: #e6e6e6;
+        margin-top: 65px;
+      }
+
+      @at-root .line8 {
+        width: 515px;
+        background: linear-gradient(to right, #72cf63, #49c192);
+        margin-top: 20px;
+      }
+    }
+    .coloros3_1_section_4-text {
+      position: relative;
+      text-align: center;
+      padding-top: 100px;
+//      animation: fadeInUp 1.2s;
+      color: #373737;
+      z-index: 1;
+      h3 {
+        //        animation: text_animate .7s forwards cubic-bezier(.39, .575, .565, 1);
+        //        animation-delay: 0s;
+        color: #fff;
+        padding-bottom: 15px;
+        font-size: 42px;
+
+
+
+        strong {
+          font-size: 48px;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        //        animation: text_animate .7s forwards cubic-bezier(.39, .575, .565, 1);
+        //        animation-delay: 0.3s;
+        color: #fff;
+        font-size: 20px;
+
+
+      }
+    }
+    @at-root .number {
+      position: absolute;
+      right: 150px;
+      top: 120px;
+      font-size: 32px;
+      color: #13be73;
+      div {
+        opacity: 1;
+        line-height: 70px;
+        margin-bottom: 23px;
+        background: url("../img/coloros3_1_img/s3_up.png-170912.png") no-repeat center right;
+        padding-right: 25px;
+        //        transition: all 0.3s linear 1.5s
+      }
+
+      .n1 {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+
+.coloros3_1-topic4 {
+  height: 1030px;
+  overflow: hidden;
+  background: linear-gradient(to bottom,#31e194,#27d88b);
+  text-align: center;
+  .inner-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .coloros3_1_section_5-text {
+      position: relative;
+      text-align: center;
+      padding-top: 100px;
+//      animation: fadeInUp 1.2s;
+      color: #ffffff;
+      z-index: 1;
+      h3 {
+        padding-bottom: 15px;
+        font-size: 42px;
+
+
+        strong{
+          font-weight: bold;
+          font-size: 48px;
+        }
+      }
+      p {
+        //        animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+        //        animation-delay: 0.3s;
+        color: #fff;
+        font-size: 20px;
+
+
+      }
+    }
+    .coloros3_1_section_5-img {
+      margin: 70px auto 100px auto;
+      .inner {
+        position: relative;
+        width: 320px;
+        height: 655px;
+        margin: auto;
+        display: inline-block;
+        .video {
+          position: absolute;
+          left: 12px;
+          top: 62px;
+          z-index: 9;
+        }
+
+
+      }
+      .img-1 {
+        margin-right: 100px;
+
+      }
+
+      .img-2 {
+        margin-left: 100px;
+      }
+    }
+    .animated {
+      animation-fill-mode: both;
+    }
+  }
+}
+
+
+.coloros3_1-topic4-1 {
+  height: 640px;
+  overflow: hidden;
+  background: linear-gradient(to bottom,#ebebeb,#f3f3f3);
+  position: relative;
+  text-align: center;
+
+  .inner-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 640px;
+    .coloros3_1_section_6-text {
+      position: absolute;
+      text-align: left;
+      left: 0;
+      padding-top: 100px;
+//      animation: fadeInUp 1.2s;
+      color: #373737;
+      z-index: 1;
+      h3{
+        font-weight: normal;
+        color: #333;
+        padding-bottom: 15px;
+        font-size: 42px;
+        strong{
+          font-weight: bold;
+        }
+      }
+      p {
+        //         animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+        //         animation-delay: 0.3s;
+        font-size: 20px;
+        color: #333;
+      }
+    }
+
+    @at-root .coloros3_1_section_6-img{
+      .img-1 {
+        bottom: -400px;
+        left: -100px;
+        margin-right: 100px;
+        position: absolute;
+        transition: all 0.5s;
+        z-index: 1;
+//        animation:fadeInUp .5s;
+      }
+      .img-2 {
+        top: -400px;
+        right: -200px;
+        margin-left: 100px;
+        position: absolute;
+        //          top: -700px;
+        //          right: -400px;
+//        animation:fadeInDown .5s;
+        transition: all 0.5s;
+        z-index: 1;
+      }
+    }
+
+    .coloros3_1_section_6-icon{
+      position: absolute;
+      z-index: 9;
+      transition: all 0.5s cubic-bezier(0, -1, 0, 1) 2s;
+
+    }
+    .icon-1{
+      animation:show .5s linear;
+      -webkit-animation:show .5s linear;
+      top: 70px;
+      right: 340px;
+
+      @keyframes show
+      {
+        from {
+          left: 260px;
+          top: 800px;
+        }
+        to {
+          left:800px;
+          top: 70px;
+        }
+      }
+    }
+
+    .icon-2 {
+      animation:show .9s linear;
+      -webkit-animation:show .9s linear;
+      top: 260px;
+      left: 340px;
+      //        transition-delay: 0.7s;
+      @keyframes show
+      {
+        from {
+          left: 150px;
+          top: 500px;
+        }
+        to {
+          left:480px;
+          top: 260px;
+        }
+      }
+
+    }
+
+    .icon-3 {
+      top: 230px;
+      left: 635px;
+      transition-delay: 0.8s;
+    }
+    .icon-4 {
+      top: 400px;
+      left: 487px;
+      transition-delay: 0.9s;
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(0, -1, 0, 1);
+    }
+
+    .icon-5 {
+      transition: all 0.5s cubic-bezier(0, -1, 0, 1) 2s;
+      top: 530px;
+      right: 920px;
+    }
+  }
+}
+//石玲玲
+/*  Branch EaseUse  */
+@mixin pseudo{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+@mixin anim_h{
+  font-size: 42px;
+  animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+  animation-delay: 0;
+}
+@mixin anim_p{
+  font-size: 20px;
+  animation: text_animate .7s forwards cubic-bezier(.39,.575,.565,1);
+  animation-delay: 0.3s;
+}
+@mixin width{
+  width: 100%;
+  overflow: hidden;
+}
+@mixin  anim_img{
+  margin: 70px auto 100px auto;
+  position: relative;
+}
+.easily-use-slide{
+  height: 1040px;
+  @include width;
+}
+.easily-use-guounp{
+  width: 1200px;
+  margin: 0 auto;
+  .easily-use-text{
+    position: relative;
+    z-index: 1;
+    h3{
+      margin-top: 100px;
+      font-size: 42px;
+      padding-bottom: 15px;
+      @include anim_h;
+    }
+    p{
+      @include anim_p;
+    }
+  }
+  .easily-use-slide-img{
+    @include  anim_img;
+    width: 320px;
+    height: 655px;
+    img{
+      margin: 0 auto;
+    }
+    video{
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 24px;
+    }
+  }
+}
+.easily-use-guounp::before{
+  @include pseudo();
+}
+.easily-use-guounp::after{
+  @include pseudo();
+}
+.easily-use-photo{
+  height: 1020px;
+  @include width;
+  position: relative;
+  .easily-use-photo-easily-bg{
+    background: url("../img/coloros3_1_img/s15_2.jpg-170912.jpg") no-repeat center top fixed;
+    height: 1020px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: -9;
+    width: 100%;
+    transition: all 0.2s;
+  }
+  a{
+    background: transparent;
+    text-decoration: none;
+  }
+  .easily-use-photo-bg{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .easily-use-slide-img{
+    @include  anim_img;
+    width: 100%;
+    .easily-use-img-one{
+      margin:0 auto;
+    }
+    .easily-use-img-two{
+      margin-left:100px;
+    }
+  }
+  .easily-use-word{
+    color: #ffffff;
+  }
+}
+.easily-use-figure{
+  @include width;
+  height: 1070px;
+  background: linear-gradient(to bottom,#ffe927,#ffc027);
+  .easily-use-figure-img{
+    @include  anim_img;
+  }
+}
+.easily-use-eyeshield{
+  @include width;
+  height: 1150px;
+  background:url("../img/coloros3_1_img/s8_bg.jpg-170912.jpg") no-repeat center top;
+  background-size: cover;
+  transition: all 0.3s;
+  .easily-use-eyeshield-img{
+    margin: 70px auto 80px auto;
+    position: relative;
+  }
+  .easily-use-img-ul{
+    list-style: none;
+    li{
+      color: #fff;
+      font-size: 20px;
+      width: 32%;
+      float: left;
+      .easily-use-img-li-one{
+        margin-right:62px;
+      }
+      .easily-use-img-li-two{
+        margin-left: -10px;
+      }
+      .easily-use-img-li-three{
+        margin-left: 73px;
+      }
+    }
+  }
+  .easily-use-word{
+    color: #fff;
+  }
+}
+.easily-use-split{
+  @include width;
+  height: 850px;
+  .easily-use-split-img{
+    margin: 100px auto 100px auto;
+    position: relative;
+  }
+}
+.easily-use-space-v{
+  position: relative;
+  @include width;
+  height: 1000px;
+  background: url("../img/coloros3_1_img/s9_bg.jpg-170912.jpg") no-repeat center bottom;
+  background-size: cover;
+  z-index: -99;
+  .easily-use-word{
+    color: #ffffff;
+  }
+  .easily-use-guounp-bg{
+    height: 1100px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    .easily-use-guounp-video{
+      margin-top: -100px;
+      min-width: 100vw;
+      min-height: 1200px;
+    }
+  }
+  .easily-use-guounp-cove{
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0
+  }
+  .easily-use-space-img{
+    @include anim_img;
+  }
+}
+.easily-use-message{
+  @include width;
+  background: url("../img/coloros3_1_img/s7_bg.jpg-170912.jpg") repeat-x left top;
+  height: 1300px;
+  .easily-use-message-img{
+    margin: 70px auto 100px auto;
+    img{
+      margin-left: -145px;
+    }
+  }
+}
+
+
+//郭康靖
+/*  Branch Save And Beautiful  */
+
+
+
+//组合内容动画
+
+*{
+  margin: 0;
+  padding: 0;
+}
+@mixin p(){
+  width: 1200px;
+  font-size: 20px;
+  margin: auto;
+  font-weight: normal;
+}
+
+@mixin h3(){
+  font-weight: normal;
+  font-size: 42px;
+}
+@mixin animation(){
+  animation: text_animate .7s forwards ease-in-out;
+  animation-delay: .2s;
+}
+#safety_section14{
+  height: 1000px;
+  background:url("../img/coloros3_1_img/s6_bg.jpg-170912.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  h3{
+    padding: 100px 0 50px 0;
+    font-size: 50px;
+    @include h3;
+  }
+  p{
+    @include p;
+  }
+  .section14_img{
+    width: 1200px;
+    height:574px;
+    background: url("../img/coloros3_1_img/s6_1.png-170912.png") no-repeat center;
+    margin: 70px auto;
+
+    position: relative;
+    .icon{
+      width: 62px;
+      height: 68px;
+      position: absolute;
+      animation: fadeInDown 2s infinite;
+
+      background: url("../img/coloros3_1_img/s6_2.png-170912.png");
+    }
+    .icon-1{
+      left: 270px;
+      top: 180px;
+    }
+    .icon-2{
+      left: 570px;
+      top: 120px;
+    }
+    .icon-3{
+      left: 890px;
+      top: 270px;
+    }
+    .icon-4{
+      left: 990px;
+      top:410px;
+    }
+  }
+}
+
+
+
+
+
+.section{
+  text-align: center;
+}
+#safety_section15{
+  height: 670px;
+  h3{
+    @include h3;
+    font-size: 34px;
+    padding:100px 0 30px 0;
+  }
+  p{
+    @include p;
+  }
+  img{
+    margin-top: 70px;
+
+  }
+  ul{
+    margin:50px auto;
+    width: 957px;
+    .networking{
+      margin-left: 8px;
+    }
+    .open{
+      margin-left: 76px;
+    }
+    .landing{
+      margin-left:72px ;
+    }
+    .pay{
+      margin-left: 74px;
+    }
+    li{
+      box-sizing: border-box;
+      list-style: none;
+      float: left;
+      width: 180px;
+      height: 103px;
+      text-align: left;
+      font-size: 20px;
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+  }
+
+}
+#safety_section16{
+  background: #F8F8F8;
+  height: 800px;
+  box-sizing: border-box;
+
+  @extend #safety_section15;
+
+}
+#safety_section17{
+  height: 1150px;
+  @extend #safety_section15;
+}#safety_section18{
+   height: 1070px;
+   @extend #safety_section15;
+ }
+
+@keyframes text_animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,80px,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.move p{
+  @include animation;
+}
+.move h3{
+  @include animation;
+}
+
+
+
+
+
+
 
 
 //底部链接
@@ -213,12 +1039,11 @@ ul{
         display: none;
         width: 300px;
         height: 300px;
-        position: absolute;
-        top: 0;
+        position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
-        margin: auto;
+        margin: 80px auto;
         z-index: 555;
       }
     }
@@ -230,6 +1055,25 @@ ul{
     display: block;
     margin: auto;
     padding-left: 20px;
+  }
+}
 
+//动画
+@keyframes show_down{
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show_up{
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, -100%, 0);
   }
 }
