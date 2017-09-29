@@ -157,9 +157,10 @@
 .easily-use-space-v{
   position: relative;
   @include width;
-  height: 1100px;
+  height: 1000px;
   background: url("../img/coloros3_1_img/s9_bg.jpg-170912.jpg") no-repeat center bottom;
   background-size: cover;
+  z-index: -99;
   .easily-use-word{
      color: #ffffff;
   }
@@ -170,7 +171,7 @@
     z-index: -1;
     width: 100%;
     top: 0;
-    .easily-use-space-video{
+    .easily-use-guounp-video{
       margin-top: -100px;
       min-width: 100vw;
       min-height: 1200px;

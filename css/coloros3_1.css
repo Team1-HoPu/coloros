@@ -129,9 +129,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 1100px;
+  height: 1000px;
   background: url("../img/coloros3_1_img/s9_bg.jpg-170912.jpg") no-repeat center bottom;
-  background-size: cover; }
+  background-size: cover;
+  z-index: -99; }
   .easily-use-space-v .easily-use-word {
     color: #ffffff; }
   .easily-use-space-v .easily-use-guounp-bg {
@@ -141,7 +142,7 @@
     z-index: -1;
     width: 100%;
     top: 0; }
-    .easily-use-space-v .easily-use-guounp-bg .easily-use-space-video {
+    .easily-use-space-v .easily-use-guounp-bg .easily-use-guounp-video {
       margin-top: -100px;
       min-width: 100vw;
       min-height: 1200px; }
