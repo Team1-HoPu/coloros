@@ -44,9 +44,10 @@ html {
   font-weight: "xiaohei";
   border-top: 1px solid #DDDDDD;
   width: 100%;
-  background: -webkit-linear-gradient(top, #fff, #DFF7E2); }
+  background: url("../img/safe_img/clean_bg.png-170912.png") repeat-x left top; }
   .safe-pc-fullpage .safe-pc-fullpage-width {
     width: 120rem;
+    margin: 0 auto;
     position: relative;
     min-height: 700px; }
     .safe-pc-fullpage .safe-pc-fullpage-width .safe-pc-fullpage-img {
@@ -108,7 +109,8 @@ html {
   padding: 200px 0; }
 
 .safe-pc-center-back {
-  width: 1300px; }
+  width: 1300px;
+  margin: 0 auto; }
 
 .safe-pc-bg {
   background-color: #fafafa; }
@@ -123,9 +125,13 @@ html {
   margin-bottom: 20px;
   color: #000; }
 .safe-pc-center-one .safe-pc-center-always {
-  text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   color: #373737; }
+  .safe-pc-center-one .safe-pc-center-always .safe-pc-center-text-list {
+    text-align: center; }
+.safe-pc-center-one .safe-pc-text-p {
+  color: #333;
+  font-size: 20px; }
 
 .safe-pc-center-img {
   float: left; }
@@ -142,7 +148,7 @@ html {
   .safe-pc-center-always .safe-pc-center-text-item {
     display: inline-block; }
   .safe-pc-center-always .safe-pc-center-text-wire {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     height: 25px;
     display: inline-block;
     margin: -1px 20px; }
@@ -153,13 +159,11 @@ html {
   width: 850px; }
   .safe-pc-center-one .safe-pc-text-h {
     font-size: 3.5rem; }
-  .safe-pc-center-one .safe-pc-center-always .safe-pc-center-text-list {
-    text-align: center; }
-    .safe-pc-center-one .safe-pc-center-always .safe-pc-center-text-list span {
-      font-size: 3rem; }
+  .safe-pc-center-one .safe-pc-center-always .safe-pc-center-text-list span {
+    font-size: 30px; }
   .safe-pc-center-one .safe-pc-text-p {
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 20px;
     color: #333; }
 
 .safe-pc-foot {
@@ -191,5 +195,35 @@ html {
   .safe-pc-foot p {
     color: #8c8c8c;
     font-size: 13px; }
+
+.safe-pc-foot-we {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.safe-pc-foot-weibo {
+  background: url("../img/clonephone_img/foot_icon.png") no-repeat 0; }
+  .safe-pc-foot-weibo:hover {
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat -32px; }
+
+.safe-pc-foot-weixin {
+  position: relative;
+  background: url("../img/clonephone_img/foot_icon.png") no-repeat -64px; }
+  .safe-pc-foot-weixin:hover {
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat -96px; }
+
+.safe-pc-foot-wei:hover .safe-pc-foot-hov {
+  display: block; }
+
+.safe-pc-foot-hov {
+  position: absolute;
+  top: -300px;
+  left: 500px;
+  width: 300px;
+  height: 300px;
+  z-index: 9999;
+  display: none; }
 
 /*# sourceMappingURL=safe.css.map */
