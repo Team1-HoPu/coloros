@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-* Project：   Home StyleSheet
+* Project：   ColorOS 3_1 StyleSheet
 * Creator：   Jackzoom
-* CreatDate： 2017/09/21
+* CreatDate： 2017/09/28
 */
 * {
   padding: 0;
@@ -12,7 +12,7 @@ a {
   text-decoration: none;
   color: #222; }
   a:hover {
-    color: #1b6d85; }
+    color: #3fbc81; }
 
 html {
   font-size: 12px; }
@@ -26,7 +26,8 @@ ul {
   height: 65px;
   width: 1200px;
   margin: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: right; }
   #nav_header ul {
     width: 1200px;
     height: 65px;
@@ -48,95 +49,65 @@ ul {
       #nav_header ul li span a {
         font-size: 1.3rem;
         display: inline-block; }
-        #nav_header ul li span a:hover {
-          color: #3fbc81; }
     #nav_header ul .header_home span:hover {
       color: black; }
 
-#home_carousel {
-  height: 700px;
-  width: 1900px;
-  margin: auto;
-  overflow: hidden; }
-  #home_carousel ul {
-    border-top: 1px solid #ccc;
-    /*header分割线*/
-    width: 5700px;
-    float: left;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    transition: all .3s ease-in-out; }
-    #home_carousel ul li {
-      float: left;
-      display: inline-block; }
-      #home_carousel ul li img {
-        width: 1900px;
-        height: 700px; }
+#coloros_header {
+  height: auto;
+  width: 100%;
+  border-top: .5px solid #ccc; }
+  #coloros_header #coloros_header_show {
+    width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center; }
+    #coloros_header #coloros_header_show .coloros_header_textPic {
+      width: 700px;
+      display: block;
+      margin: auto; }
+    #coloros_header #coloros_header_show span {
+      margin: 10px 0;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.4rem; }
+      #coloros_header #coloros_header_show span img {
+        position: relative;
+        top: 2px;
+        right: 5px; }
+      #coloros_header #coloros_header_show span:hover {
+        color: #3fbc81;
+        cursor: pointer; }
 
-.home_car_ico {
-  position: relative;
-  top: -50px;
-  z-index: 555;
-  left: 950px;
-  float: left; }
-  .home_car_ico span {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    float: left;
-    margin: 5px;
-    border-radius: 50%;
-    background: RGBA(0, 0, 0, 0.5); }
-  .home_car_ico .home_car_active {
-    background: RGBA(255, 255, 255, 0.8); }
-
-#home_function {
-  width: 1200px;
-  margin: 50px auto; }
-  #home_function ul {
-    width: 1300px;
-    height: 120px;
+#coloros_anchor_links {
+  position: absolute;
+  z-index: 9999;
+  margin-top: -80px;
+  height: 100px;
+  width: 100%;
+  background: #fff; }
+  #coloros_anchor_links ul {
+    width: 1200px;
+    padding-left: 400px;
     margin: auto; }
-    #home_function ul li {
-      width: 400px;
-      border-right: 1px solid #ccc;
-      margin-right: 30px; }
-      #home_function ul li:last-child {
-        border-right: 0; }
-      #home_function ul li .home_fun_img {
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        float: left;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        text-align: center;
-        margin: 5px;
-        display: block; }
-        #home_function ul li .home_fun_img img {
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          vertical-align: middle; }
-      #home_function ul li .home_fun_info {
-        margin-top: 5px;
-        margin-left: 10px;
-        display: inline-block; }
-        #home_function ul li .home_fun_info:hover {
-          color: #3fbc81; }
-        #home_function ul li .home_fun_info h2 {
-          font-weight: normal;
-          font-size: 1.7rem;
-          overflow: hidden;
-          cursor: pointer; }
-          #home_function ul li .home_fun_info h2 > a:hover {
-            color: #3fbc81; }
-        #home_function ul li .home_fun_info span {
-          color: #666;
-          font-size: 1.4rem;
-          margin-top: 15px;
-          display: block; }
+    #coloros_anchor_links ul li a {
+      font-size: 2rem;
+      width: 210px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block; }
+      #coloros_anchor_links ul li a:hover {
+        color: inherit; }
+    #coloros_anchor_links ul li .coloros_anchor_quick {
+      background: url("../img/coloros3_1_img/s1_nav.png") no-repeat 60px -65px; }
+    #coloros_anchor_links ul li .coloros_anchor_ease {
+      background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -185px -65px; }
+    #coloros_anchor_links ul li .coloros_anchor_safe {
+      background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -425px -65px; }
+    #coloros_anchor_links ul li .coloros_anchor_beauty {
+      background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -645px -65px; }
 
 #bottom_footer {
   width: 700px;
@@ -209,4 +180,4 @@ ul {
     margin: auto;
     padding-left: 20px; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=coloros3_1.css.map */

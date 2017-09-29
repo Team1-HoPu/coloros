@@ -1,11 +1,11 @@
 /*
-* Project：   Home StyleSheet
+* Project：   ColorOS 3_1 StyleSheet
 * Creator：   Jackzoom
-* CreatDate： 2017/09/21
+* CreatDate： 2017/09/28
 */
 $nav_width:1200px;//容器宽度
-$car_width:1900px;//轮播图图片宽度
 $hover_color:#3fbc81;//文字hover颜色
+
 *{
   padding: 0;
   margin: 0;
@@ -14,7 +14,7 @@ a{
   text-decoration: none;
   color: #222;
   &:hover{
-    color: #1b6d85;
+    color: $hover_color;
   }
 }
 html{
@@ -26,12 +26,15 @@ ul{
     float: left;
   }
 }
+
+
 //头部导航header
 #nav_header{
   height: 65px;
   width: $nav_width;
   margin: auto;
   overflow: hidden;
+  text-align: right;
   ul {
     width: $nav_width;
     height: 65px;
@@ -55,9 +58,6 @@ ul{
       span a{
         font-size: 1.3rem;
         display: inline-block;
-        &:hover {
-          color: $hover_color;
-        }
       }
     }
     .header_home span{
@@ -68,107 +68,83 @@ ul{
   }
 }
 
-//首页轮播图
-#home_carousel{
-  height: 700px;
-  width: $car_width;
-  margin:auto;
-  overflow: hidden;
-  ul{
-    border-top: 1px solid #ccc;/*header分割线*/
-    width: $car_width*3;
-    float: left;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    transition: all .3s ease-in-out;
-    li{
-      float: left;display: inline-block;
+//coloros视频展示
+
+#coloros_header{
+  height: auto;
+  width: 100%;
+  border-top: .5px solid #ccc;
+  #coloros_header_show{
+    width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    .coloros_header_textPic{
+      width: 700px;
+      display: block;
+      margin: auto;
+    }
+    span{
+      margin: 10px 0;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.4rem;
       img{
-        width: $car_width;
-        height: 700px;
+        position: relative;
+        top: 2px;
+        right: 5px;
+      }
+      &:hover{
+        color: $hover_color;
+        cursor: pointer;
       }
     }
+
   }
 }
-.home_car_ico{
-  position: relative;
-  top: -50px;
-  z-index: 555;
-  left:950px;
-  float: left;
-  span{
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    float: left;
-    margin: 5px;
-    border-radius: 50%;
-    background: RGBA(0,0,0,.5);
-  }
-  .home_car_active{
-    background: RGBA(255,255,255,.8);
+//coloros锚链接切换
+#coloros_anchor_links{
+  position: absolute;
+  z-index: 9999;
+  margin-top: -80px;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  ul{
+    width: $nav_width;
+    padding-left: 400px;
+    margin: auto;
+    li{
+      a{
+        font-size: 2rem;
+        width: 210px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        &:hover{
+          color: inherit;
+        }
+      }
+//锚链接雪碧图
+      .coloros_anchor_quick{
+        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat 60px -65px;
+      }
+      .coloros_anchor_ease{
+        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -185px -65px;
+      }
+      .coloros_anchor_safe{
+        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -425px -65px;
+      }
+      .coloros_anchor_beauty{
+        background: url("../img/coloros3_1_img/s1_nav.png") no-repeat -645px -65px;
+      }
+    }
   }
 }
 
-//主页功能介绍
-#home_function{
-  width: $nav_width;
-  margin:50px auto;
-  ul{
-    width: $nav_width+100;
-    height: 120px;
-    margin: auto;
-    li{
-      width: $nav_width/3;
-      border-right: 1px solid #ccc;
-      margin-right: 30px;
-      &:last-child{
-        border-right: 0;
-      }
-      .home_fun_img{
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        float: left;
-        border:1px solid #ccc;
-        border-radius: 20px;
-        text-align: center;
-        margin: 5px;
-        display: block;
-        img{
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          vertical-align: middle
-        }
-      }
-      .home_fun_info{
-        margin-top: 5px;
-        margin-left: 10px;
-        display: inline-block;
-        &:hover{
-          color: $hover_color;
-        }
-        h2{
-          font-weight: normal;
-          font-size: 1.7rem;
-          overflow: hidden;
-          cursor: pointer;
-          &>a:hover{
-            color: $hover_color;
-          }
-        }
-        span{
-          color: #666;
-          font-size: 1.4rem;
-          margin-top: 15px;
-          display: block;
-        }
-      }
-    }
-  }
-}
 
 //底部链接
 #bottom_footer{
@@ -244,9 +220,6 @@ ul{
         left: 0;
         margin: auto;
         z-index: 555;
-
-
-
       }
     }
   }
