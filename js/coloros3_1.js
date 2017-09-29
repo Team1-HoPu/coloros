@@ -3,7 +3,7 @@
  * Project ： ColorOS 3.1 Javascript
  * Creator ：Jackzoom
  */
-var scrollTop_arr=[735,6513,13895,15365];
+var scrollTop_arr=[735,5455,13895,15365];//配置滚动锚链接滚动条位置
 
 //锚链接事件
 $(function () {
@@ -79,7 +79,7 @@ $(window).scroll( function() {
         if(window.scrollY<scrollTop_arr[1]){
 
             //快模块：对比图动画事件
-            if(window.scrollY>=scrollTop_arr[1]-3063){
+            if(window.scrollY>=2600){
                 var linesscroll = $(".coloros3_1_section_4-lines>div");
                 $(linesscroll).removeClass("section_4_div").addClass("line1");
                 $(".video").fadeOut(2000);

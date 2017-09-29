@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: #222; }
+  color: #2d2d2d; }
   a:hover {
     color: #3fbc81;
     text-decoration: none; }
@@ -61,7 +61,7 @@ ul {
 .clonephone_section1 {
   background: #0E0E0E;
   height: 690px;
-  color: #ffffff; }
+  color: #2d2d2d; }
   .clonephone_section1 img {
     width: 1200px;
     height: 690px;
@@ -317,7 +317,8 @@ ul {
 
 #bottom_footer {
   width: 700px;
-  margin: 30px auto; }
+  margin: auto;
+  padding: 30px 0; }
   #bottom_footer .footer_links {
     line-height: 10px;
     margin: auto; }

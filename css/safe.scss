@@ -207,7 +207,6 @@ body{
    @include center_r_float;
  }
 .safe-pc-center-always{
-  font-weight: "xiaohei";
   .safe-pc-center-text-item{
     display: inline-block;
   }
@@ -240,71 +239,88 @@ body{
     color: #333;
   }
 }
-.safe-pc-foot{
-  overflow: inherit;
-  min-height: 100px;
-  border-top: 1px solid #DDDDDD;
-    ul{
-      position: relative;
-      width: 675px;
-      margin: 0 auto;
-      font-family: 'zhunhei';
-      line-height: 60px;
-      .safe-pc-foot-border{
-        width: 1px;
-        height: 16px;
-        background: #dfdfdf;
-        display: inline-block ;
-        padding: 0px;
-        margin-top: 21px;
-      }
-      li{
-        display: inline-block;
-        margin-left: 20px;
-        a{
-          color: #555;
-          background: transparent;
-          text-decoration: none;
-          &:hover{
-            color: #3fbc81;
-          }
-        }
+//底部链接
+#bottom_footer{
+  width: $nav_width/2+100;
+  margin: 30px auto;
+  .footer_links{
+
+    line-height: 10px;
+    margin: auto;
+    li{
+      font-size: 1.3rem;
+      margin: 10px 0;
+      a:hover{
+        color: $hover_color;
       }
     }
-  p{
-    color: #8c8c8c;
-    font-size: 13px;
+    li:nth-child(2n-1){
+      height: 20px;
+      line-height: 20px;
+      padding:0 20px;
+      border-right: 1px solid #ccc;
+    }
+    .footer_ico_weibo{
+      cursor: pointer;
+      .footer_weibo_img{
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -5px;
+        margin-right: 10px;
+      }
+      .footer_weibo_a{
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+      }
+    }
+    .footer_ico_weixin{
+      cursor: pointer;
+      padding-left: 20px;
+      padding-top: 5px;
+      .footer_weixin_img{
+        background-image: url("../img/home_img/foot_icon.png");
+        background-repeat: no-repeat;
+        background-position: -56px 0;
+        background-size: cover;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        margin-top: -10px;
+        margin-right: 10px;
+
+      }
+      .footer_weixin_a{
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+      }
+      img{
+        display: none;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 80px auto;
+        z-index: 555;
+      }
+    }
   }
-}
-.safe-pc-foot-we{
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-.safe-pc-foot-weibo{
-  background: url("../img/clonephone_img/foot_icon.png") no-repeat 0;
-  &:hover{
-    background: url("../img/clonephone_img/foot_icon.png") no-repeat -32px;
+  .footer_about{
+    clear: both;
+    width: $nav_width/2+200;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+    padding-left: 20px;
   }
-}
-.safe-pc-foot-weixin{
-  position: relative;
-  background: url("../img/clonephone_img/foot_icon.png") no-repeat -64px;
-  &:hover{
-    background: url("../img/clonephone_img/foot_icon.png") no-repeat -96px;
-}
-}
-.safe-pc-foot-wei:hover .safe-pc-foot-hov{
-display: block;
-}
-.safe-pc-foot-hov{
-  position: absolute;
-  top: -300px;
-  left: 500px;
-  width: 300px;
-  height: 300px;
-  z-index: 9999;
-  display: none;
 }

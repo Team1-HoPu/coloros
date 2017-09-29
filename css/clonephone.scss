@@ -6,25 +6,29 @@
 
 $nav_width:1200px;//容器宽度
 $car_width:1900px;//轮播图图片宽度
+$font_color: #2d2d2d;//主题文字颜色
 $hover_color:#3fbc81;//文字hover颜色
+
 *{
   padding: 0;
   margin: 0;
 }
 a{
   text-decoration: none;
-  color: #222;
+  color: $font_color;
   &:hover{
     color: $hover_color;
     text-decoration: none;
   }
 }
+
 html{
   font-size: 12px;
 }
 body{
   font-family: "Microsoft YaHei", "Myriad Pro", FZLanTingHei-R-GBK, Arial, STHeiti, SimSun, sans-serif;
   overflow-x: hidden;
+
 }
 ul{
   list-style: none;
@@ -38,6 +42,7 @@ ul{
   width: $nav_width;
   margin: auto;
   overflow: hidden;
+
   ul {
     width: $nav_width;
     height: 65px;
@@ -76,11 +81,12 @@ ul{
 
 
 
+
 //头部下的大图片
 .clonephone_section1{
   background: #0E0E0E;
   height: 690px;
-  color: #ffffff;
+  color: $font_color;
   img{
     width: 1200px;
     height: 690px;
@@ -417,9 +423,9 @@ ul{
 //底部导航
 #bottom_footer{
   width: $nav_width/2+100;
-  margin: 30px auto;
+  margin: auto;
+  padding: 30px 0;
   .footer_links{
-
     line-height: 10px;
     margin: auto;
     li{
