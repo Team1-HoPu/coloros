@@ -145,7 +145,37 @@ footer {
     float: left;
     padding: 0 20px;
     font-size: 14px;
-    color: #555; }
+    color: #555;
+    vertical-align: middle;
+    cursor: pointer; }
+    .footer_list li a {
+      text-decoration: none;
+      color: #000000; }
+    .footer_list li:hover {
+      color: #01ba95; }
+    .footer_list li #weibo:hover {
+      color: #01ba95; }
+      .footer_list li #weibo:hover .weibo_bg {
+        background-position: -32px 0; }
+    .footer_list li #wechat:hover {
+      color: #01ba95; }
+      .footer_list li #wechat:hover .wechat_bg {
+        background-position: -96px 0; }
+  .footer_list .weibo_bg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat;
+    vertical-align: middle;
+    margin: 0 10px 0 0; }
+  .footer_list .wechat_bg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/clonephone_img/foot_icon.png") no-repeat;
+    vertical-align: middle;
+    background-position: -64px 0;
+    margin: 0 10px; }
   .footer_list .seperator {
     width: 1px;
     height: 16px;

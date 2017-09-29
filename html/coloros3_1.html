@@ -9,10 +9,13 @@
     <title>『ColorOS 3.1快一点 大不同』 OPPO手机系统官方网站</title>
 </head>
 <body>
-    <!--&lt;!&ndash;//安全部分&ndash;&gt;-->
-    <div class="safety_content">
+<!--&lt;!&ndash;//安全部分&ndash;&gt;-->
+    <div class="coloros-safety_content">
+
+    <!--一键上网-->
+
         <div id="safety_section14" class="section">
-            <h3>OPPO 漫游，一键上网，轻松游全球</h3>
+            <h3><strong>OPPO</strong> 漫游，一键上网，轻松游全球</h3>
             <p>不需要更换 SIM 卡，不需要繁琐的设置，打开 OPPO 漫游轻松实现你出境上网的需求。同时超低资费，
                 超多优惠套餐可选择，即买即用，不用再支付额外的费用。</p>
             <div class="section14_img">
@@ -22,6 +25,7 @@
                 <div class="icon icon-4"></div>
             </div>
         </div>
+    <!--安全支付 -->
         <div id="safety_section15" class="section">
             <h3><strong>支付安全</strong>，支付每一步，严格保护</h3>
             <p>通过分析手机支付流程，在 ColorOS 3.1 系统设置了 WiFi 安全检测、支付环境检测、
@@ -38,6 +42,7 @@
                     恶意扣费有提醒，不会乱扣一分钱</li>
             </ul>
         </div>
+    <!--查找手机-->
         <div id="safety_section16" class="section">
             <h3><strong>查找手机</strong>，保护手机丢失后的隐私安全</h3>
             <p>手机丢失后，通过查找手机发送定位、播放声音、锁死或抹除数据等执行指令，远程管控丢失的手机，
@@ -54,7 +59,49 @@
                     抹除手机里全部数据，更彻底保护隐私不被泄露</li>
             </ul>
         </div>
+<!--美丽部分-->
+    <!--鲜活色彩-->
+        <div id="safety_section17" class="section">
+            <h3><strong>鲜活色彩</strong>，轻松愉悦，彰显年轻活力</h3>
+            <p>ColorOS 3.1 对系统图标进行色彩重绘，提升色彩的明度和饱和度，让色彩更加鲜活；合理放大彩色区域面积，<br>
+                并赋予色彩灵动的寓意，让你感受轻快、愉悦，充满生命力的界面氛围。</p>
+            <img src="../img/coloros3_1_img/s13_0.png-170912.png" alt=""/>
+        </div>
+    <!--秩序美学-->
+        <div id="safety_section18" class="section">
+            <h3><strong>秩序美学</strong>，清晰升级</h3>
+            <p>ColorOS 3.1 精心调配字体大小、磅值、颜色，用最佳的对比度呈现信息；视觉重新分层，彼此之间的从属关系更加清晰，<br>
+                信息获取更加高效；内容区域更加严谨的设计分析与精心推敲的舞台式布局，让界面信息呈现更加主次分明。</p>
+            <img src="../img/coloros3_1_img/s14_1.jpg-170912.jpg" alt=""/>
+        </div>
     </div>
 
 </body>
+<script>
+    window.onload=function(){
+
+        var div1 = document.getElementsByClassName("section");
+        var screenH=window.screen.height;
+        var idx;
+
+        window.onresize=function(){
+            screenH=window.screen.height;
+        };
+        window.onscroll=function(){
+            var arr = [];
+//            var elePosY= ele.getBoundingClientRect().top;
+            for(var i=0;i<div1.length;i++){
+                arr.push(div1[i].getBoundingClientRect().top);
+            }
+            for(var j=0;j<arr.length;j++){
+                (function(n){
+                    if(arr[n]<screenH-130){
+                        div1[n].className = "section move"
+                    }
+                })(j)
+            }
+
+        }
+    }
+</script>
 </html>

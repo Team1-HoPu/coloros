@@ -7,7 +7,6 @@
     <title>『ColorOS 3.0 ROM官方下载』 OPPO手机系统官方网站</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/romdownload.css"/>
-
 </head>
 <body>
     <div class="nav_container" id="nav_container">
@@ -53,53 +52,6 @@
         <div class="wrapper">
             <h1 class="download_title">热门应用下载</h1>
             <div class="down_container down_container_box">
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                    <!--<div class="qrcode-box text-center">-->
-                        <!--<img src="../img/romdownload_img/rom_ico_Rq.png" alt=""/>-->
-                        <!--<h3>软件商店</h3>-->
-                        <!--<p>扫一扫</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                <!--</div>-->
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                <!--</div>-->
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                <!--</div>-->
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                <!--</div>-->
-                <!--<div class="download_box jqbox">-->
-                    <!--<img src="../img/romdownload_img/rom_ico_appstore.jpg" alt=""/>-->
-                    <!--<h3>软件商店</h3>-->
-                    <!--<p class="download_txt text-center">OPPO官方、正版、安全的APP下载渠道，拥有海量资源。-->
-                        <!--提供软件下载和管理。</p>-->
-                    <!--<button class="btn">立即下载</button>-->
-                <!--</div>-->
             </div>
         </div>
     </div>
@@ -114,84 +66,18 @@
             <li>联系我们</li>
             <li class="seperator"></li>
             <li>
-                <a href="#">
-                    <span>123123</span>新浪微博
+                <a id="weibo" href="#">
+                    <span class="weibo_bg"></span>新浪微博
                 </a>
-                <a href="#">
-                    <span>456546</span>微信公众号
+                <a id="wechat" href="#">
+                    <span class="wechat_bg"></span>微信公众号
                 </a>
             </li>
         </ul>
         <p>Copyright © 广东欧珀移动通信有限公司 2004-2017. All Rights Reserved. 网站备案号 : 粤ICP备11013528号-7</p>
     </div></footer>
-
 </body>
-<script>
-
-
-
-        (function(win){
-            function Mixed(config){
-                this.config = config;
-                this.container = this.config.container;
-                this.render();
-//                this.change();
-            }
-            Mixed.prototype= {
-                constructor:Mixed,
-                render:function(){
-                    var tem = document.createDocumentFragment();                               //文档碎片
-                    for(var i = 0;i<this.config.title.length;i++){
-                        var list = document.createElement("div");
-//                        console.log(list);
-                        list.className = "download_box";
-                        list.style.width = this.config.width;
-                        list.style.height = this.config.height;
-                        list.innerHTML = "<img class='phone' src='"+this.config.src[i]+"'><h3>"+this.config.title[i]+"</h3><p>"+this.config.content[i]+"</p><button class='btn'>立即下载</button>";
-                        tem.appendChild(list);
-                        var qrcodebox = document.createElement("div");
-                        qrcodebox.className = "qrcode-box";
-                        qrcodebox.style.width = this.config.qrcodebox.qrcodebox_width;
-                        qrcodebox.style.height = this.config.qrcodebox.qrcodebox_height;
-                        qrcodebox.style.position = "absolute";
-                        qrcodebox.style.left = "0px";
-                        qrcodebox.style.top = "0px";
-                        qrcodebox.style.background = "#ffffff";
-                        qrcodebox.style.display = "none";
-                        qrcodebox.innerHTML = "<img class='img' src='"+this.config.qrcodebox.img_src[0]+"'><h3>"+this.config.qrcodebox.title[i]+"</h3><p>"+this.config.qrcodebox.content[0]+"</p> ";
-                        list.appendChild(qrcodebox);
-                    }
-//                    console.log(this.container);
-                    this.container[0].appendChild(tem);
-                }
-//                change: function () {
-//                    var list = document.getElementsByClassName("download_box");
-//                    var qrcodebox = document.getElementsByClassName("qrcode-box");
-//                    for(var j =0;j<6;j++){
-//                        if(this.config.qrcodebox.flag === true){
-//                            (function(n){
-//                                list[n].addEventListener("mouseover",function(){
-//                                    qrcodebox[n].style.display = "block";
-//                                });
-//                                list[n].addEventListener("mouseout",function(){
-//                                    qrcodebox[n].style.display = "none";
-//                                });
-//
-//                            })(j);
-//                        }
-//
-//                    }
-//
-//                }
-            };
-            win["Mixed"] = Mixed;
-        })(window);
-
-
-
-
-
-</script>
+<script  src="../js/romdownload.js"></script>
 <script>
 
         var config = {
@@ -211,7 +97,7 @@
             qrcodebox:{
                 flag:false,
                 img_src:["../img/romdownload_img/rom_ico_Rq.png"],
-                title:["1","1","1","1","1","1"],
+                title:["","","","","",""],
                 content:["","","","","",""],
                 qrcodebox_width:"100%",
                 qrcodebox_height:"290px"

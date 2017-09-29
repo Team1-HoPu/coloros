@@ -2,6 +2,21 @@
   margin: 0;
   padding: 0;
 }
+@mixin p(){
+  width: 1200px;
+  font-size: 20px;
+  margin: auto;
+  font-weight: normal;
+}
+
+@mixin h3(){
+  font-weight: normal;
+  font-size: 42px;
+}
+@mixin animation(){
+  animation: text_animate .7s forwards ease-in-out;
+  animation-delay: .2s;
+}
 #safety_section14{
   height: 1000px;
   background:url("../img/coloros3_1_img/s6_bg.jpg-170912.jpg") no-repeat center;
@@ -11,10 +26,10 @@
   h3{
     padding: 100px 0 50px 0;
     font-size: 50px;
+    @include h3;
   }
   p{
-    margin: auto;
-    width: 1200px;
+    @include p;
   }
   .section14_img{
     width: 1200px;
@@ -28,7 +43,7 @@
       height: 68px;
       position: absolute;
       animation: fadeInDown 2s infinite;
-      animation-iteration-count: 5;
+
       background: url("../img/coloros3_1_img/s6_2.png-170912.png");
     }
     .icon-1{
@@ -60,14 +75,12 @@
 #safety_section15{
   height: 670px;
   h3{
+    @include h3;
     font-size: 34px;
     padding:100px 0 30px 0;
-    animation: text_animate .7s forwards ease-in-out;
-    animation-delay: .5s;
   }
   p{
-    animation: text_animate .7s forwards ease-in-out;
-    animation-delay: .5s;
+    @include p;
   }
   img{
     margin-top: 70px;
@@ -115,6 +128,14 @@
   @extend #safety_section15;
 
 }
+#safety_section17{
+  height: 1150px;
+  @extend #safety_section15;
+}#safety_section18{
+  height: 1070px;
+  @extend #safety_section15;
+}
+
 @keyframes text_animate {
   0% {
     opacity: 0;
@@ -125,14 +146,10 @@
     transform: translateZ(0);
   }
 }
-@keyframes camera{
-  0% {
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(0.2);
-  }
-  100%{
-    transform: scale(1);
-  }
+.move p{
+  @include animation;
 }
+.move h3{
+  @include animation;
+}
+
